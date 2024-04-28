@@ -9,7 +9,7 @@ function App() {
   const [msg, setMsg] = useState();
 
   const newMsg = () => {
-    setMsg("dette kosta meg 95kr");
+    setMsg("portfolio");
   };
 
   return (

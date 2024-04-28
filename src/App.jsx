@@ -17,7 +17,7 @@ function App() {
       <ChakraProvider>
         <h1>halla</h1>
         <Button colorScheme="red" onClick={() => newMsg()}>
-          Button
+          trykk på meg
         </Button>
 
         {msg && 

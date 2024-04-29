@@ -14,3 +14,10 @@ img.githubIcon{
     display: flex;
     gap: 20px;
 }
+.contact_container a{
+transition: transform 0.1s ease-in-out;
+}
+
+.contact_container a:hover{
+    transform: translateY(-4px);
+}

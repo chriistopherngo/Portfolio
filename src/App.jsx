@@ -18,7 +18,7 @@ function App() {
             knapp
           </Button>
 
-          {toggle && <h1>halla</h1>}
+          {toggle && <h1 className="msg">halla</h1>}
         </ChakraProvider>
       </div>
     </>

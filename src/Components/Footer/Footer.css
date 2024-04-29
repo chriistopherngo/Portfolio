@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 2em 0;
+}
+
+img.githubIcon{
+    width: 20px;
+}
+
+.footer .contact_container{
+    display: flex;
+    gap: 20px;
+}

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
-import TypingComponent from './TypingComponent/TypingComponent'
+import TypingComponent from "../TypingComponent/TypingComponent";
+import githubIcon from "../../assets/svg/github.svg";
+import mailtoIcon from "../../assets/svg/mailto.svg";
 
 const Navbar = () => {
   const location = useLocation();
@@ -32,7 +34,7 @@ const Navbar = () => {
         <div className="logo">
           <ul>
             <li onClick={toggleMenu}>
-                <TypingComponent/>
+              <TypingComponent />
             </li>
           </ul>
         </div>
@@ -50,7 +52,7 @@ const Navbar = () => {
                   to=""
                   className={activeLink === "dashboard" ? "active" : ""}
                 >
-                  Link 1
+                  Projects
                 </Link>
               </li>
               <li onClick={toggleMenu}>
@@ -58,20 +60,26 @@ const Navbar = () => {
                   to=""
                   className={activeLink === "manageusers" ? "active" : ""}
                 >
-                  Link 2
+                  Skills
                 </Link>
               </li>
+              <li className="navbar_divider" onClick={toggleMenu}>
+              </li>
             </>
-            <>
+            <li>
+            <ul className="contact_container">
               <li onClick={toggleMenu}>
-                <Link
-                  to=""
-                  className={activeLink === "maingame" ? "active" : ""}
-                >
-                  Link 3
-                </Link>
+                <a href="https://github.com/chriistopherngo" target="_blank">
+                  <img className="githubIcon" src={githubIcon} alt="" />
+                </a>
               </li>
-            </>
+              <li onClick={toggleMenu}>
+                <a href="mailto:ngo.chris@hotmail.com" target="_blank">
+                  <img className="githubIcon" src={mailtoIcon} alt="" />
+                </a>
+              </li>
+              </ul>
+              </li>
           </ul>
         </div>
       </nav>

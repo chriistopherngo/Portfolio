@@ -17,6 +17,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+main {
+  height: 100dvh;
+  margin: 0 5%;
+  padding: 1rem 0;
+}
+
 /*
 a {
   font-weight: 500;

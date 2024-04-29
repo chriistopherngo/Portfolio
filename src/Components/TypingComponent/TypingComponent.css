@@ -8,7 +8,6 @@ nav .logo .name {
     
 }
 
-
 .name {
   display: inline-block;
   position: relative;
@@ -21,4 +20,10 @@ nav .logo .name {
 
 .underscore.fade {
   opacity: 0;
+}
+
+@media screen and (max-width: 1111px) {
+  nav .logo .name {
+    font-size: 16pt;
+  }
 }

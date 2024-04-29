@@ -9,17 +9,21 @@ const TypingComponent = () => {
 
   useEffect(() => {
     let currentIndex = 0;
-    const intervalId = setInterval(() => {
-      if (currentIndex <= textToType.length) {
-        setText(textToType.slice(0, currentIndex));
-        currentIndex++;
-      } else {
-        clearInterval(intervalId);
-      }
-    }, 100);
+    const intervalId = setTimeout(() => { // Change setInterval to setTimeout
+      const typingIntervalId = setInterval(() => {
+        if (currentIndex <= textToType.length) {
+          setText(textToType.slice(0, currentIndex));
+          currentIndex++;
+        } else {
+          clearInterval(typingIntervalId);
+        }
+      }, 100);
 
-    return () => clearInterval(intervalId);
-  }, []);
+      return () => clearInterval(typingIntervalId);
+    }, 220); // 200 milliseconds delay before typing starts
+
+    return () => clearTimeout(intervalId); // Clear the timeout on unmount
+  }, []); 
 
   useEffect(() => {
     const underscoreIntervalId = setInterval(() => {

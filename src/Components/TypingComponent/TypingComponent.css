@@ -1,0 +1,24 @@
+@font-face{
+    font-family: 'Cascadia Mono';   
+    src: url('../../assets/fonts/GeistMonoVF.ttf') format('ttf')
+}
+nav .logo .name {
+  font-size: 20pt;
+  font-family: "Geist Mono", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+
+.name {
+  display: inline-block;
+  position: relative;
+}
+
+.underscore {
+  opacity: 1;
+  transition: opacity 0.28s ease-in-out;
+}
+
+.underscore.fade {
+  opacity: 0;
+}

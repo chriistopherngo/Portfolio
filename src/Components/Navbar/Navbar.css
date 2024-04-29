@@ -144,7 +144,7 @@ nav .contact_container a:hover{
     margin: 0 20px;
   }
   nav a:hover {
-    border-bottom: 0;
+    text-decoration: none;
   }
   nav .navbar_divider{
     border-bottom: 1px solid gray;

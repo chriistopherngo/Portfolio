@@ -1,29 +1,26 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import { Button, ButtonGroup } from "@chakra-ui/react";
 
 function App() {
-  const [msg, setMsg] = useState();
+  const [toggle, setToggle] = useState(false);
 
-  const newMsg = () => {
-    setMsg("portfolio");
+  const handleToggle = () => {
+    setToggle(!toggle);
   };
 
   return (
     <>
-      <ChakraProvider>
-        <h1>halla</h1>
-        <Button colorScheme="red" onClick={() => newMsg()}>
-          trykk på meg
-        </Button>
+      <div className="layout">
+        <ChakraProvider>
+          <Button colorScheme="red" onClick={() => handleToggle()}>
+            knapp
+          </Button>
 
-        {msg && 
-          <p>{msg}</p>
-        }
-      </ChakraProvider>
+          {toggle && <h1>halla</h1>}
+        </ChakraProvider>
+      </div>
     </>
   );
 }

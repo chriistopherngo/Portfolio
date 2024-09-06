@@ -12,10 +12,10 @@ const Skills = () => {
             title="Languages"
             item_names={["HTML", "JavaScript", "PHP", "Python"]}
             item_images={[
-              "src/assets/img/html.png",
-              "src/assets/img/js.png",
-              "src/assets/img/php.png",
-              "src/assets/img/python.png",
+              "/img/html.png",
+              "/img/js.png",
+              "/img/php.png",
+              "/img/python.png",
             ]}
             item_links={[
               "https://developer.mozilla.org/en-US/docs/Web/HTML",
@@ -28,12 +28,12 @@ const Skills = () => {
             title="Frontend"
             item_names={["CSS", "Tailwind", "React", "Vite", "Sass", "Vue"]}
             item_images={[
-              "/src/assets/img/css.webp",
-              "src/assets/img/tailwind.png",
-              "src/assets/img/react.svg",
-              "src/assets/img/vite.png",
-              "src/assets/img/sass.png",
-              "src/assets/img/vue.webp",
+              "//img/css.webp",
+              "/img/tailwind.png",
+              "/img/react.svg",
+              "/img/vite.png",
+              "/img/sass.png",
+              "/img/vue.webp",
             ]}
             item_links={[
               "https://developer.mozilla.org/en-US/docs/Web/CSS",
@@ -47,9 +47,9 @@ const Skills = () => {
           <Card title="Backend" 
           item_names={["Node", "Express", "Laravel", "", ""]} 
           item_images={[
-            "src/assets/img/node.webp",
-            "src/assets/img/express.png",
-            "src/assets/img/laravel.png",
+            "/img/node.webp",
+            "/img/express.png",
+            "/img/laravel.png",
           ]} 
           item_links={[
             "https://nodejs.org/",
@@ -60,8 +60,8 @@ const Skills = () => {
 
           />
           <Card title="Databases" item_names={["MySQL", "MongoDB", "", "", ""]} item_images={[
-            "src/assets/img/mysql.png",
-            "src/assets/img/mongodb.webp",
+            "/img/mysql.png",
+            "/img/mongodb.webp",
           ]} 
           item_links={[
             "https://www.mysql.com/",
@@ -69,10 +69,10 @@ const Skills = () => {
           ]}
           />
           <Card title="Infrastructure" item_names={["GitHub", "Docker", "Vercel", "Railway"]} item_images={[
-            "src/assets/img/github.png",
-            "src/assets/img/docker.png",
-            "src/assets/img/vercel.svg",
-            "src/assets/img/railway.svg",
+            "/img/github.png",
+            "/img/docker.png",
+            "/img/vercel.svg",
+            "/img/railway.svg",
           ]} 
 
           item_links={[
@@ -84,11 +84,11 @@ const Skills = () => {
 
           />
           <Card title="Tools" item_names={["Visual Studio Code", "Figma", "MySQLWorkbench", "Terminal/CLI", "Git"]} item_images={[
-            "src/assets/img/vscode.png",  
-            "src/assets/img/figma.png",
-            "src/assets/img/mysqlworkbench.webp",
-            "src/assets/img/terminal.png",
-            "src/assets/img/git.png",
+            "/img/vscode.png",  
+            "/img/figma.png",
+            "/img/mysqlworkbench.webp",
+            "/img/terminal.png",
+            "/img/git.png",
   
           ]}
           

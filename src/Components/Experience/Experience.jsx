@@ -11,7 +11,7 @@ const Experience = () => {
           time="Aug 2024 – Oct 2024"
           title="Internship"
           name="Kodeo AS"
-          img="/public/img/kodeo.jpeg"
+          img="/img/kodeo.jpeg"
           description={[
             "Developed functionalities for client's website",
             "Introduced to Laravel",
@@ -22,7 +22,7 @@ const Experience = () => {
           time="Fall 2023"
           title="Teaching Assistant"
           name="NTNU Gjøvik"
-          img="/public/img/ntnu.png"
+          img="/img/ntnu.png"
           description={[
             "Teaching assistent in the labs",
             "Focus on HTML, CSS, responsive design, validating code etc.",
@@ -33,7 +33,7 @@ const Experience = () => {
           time="Aug 2023 – Aug 2024"
           title="Member of Web Committee"
           name="Darling Linjeforening"
-          img="/public/img/darling.png"
+          img="/img/darling.png"
           description={[
             "Contributed to the development of the website",
             "Maintained the website",
@@ -45,7 +45,7 @@ const Experience = () => {
           time="Aug 2022 – Jun 2025"
           title="Bachelor's Degree in Web Development"
           name="NTNU Gjøvik"
-          img="/public/img/ntnu.png"
+          img="/img/ntnu.png"
           description={[
             "Frontend and backend development",
             "User experience and design",

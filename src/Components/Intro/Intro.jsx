@@ -9,7 +9,7 @@ const Intro = () => {
           <h1>
             Hi, I'm <span class="gradient_name">Christopher Ngo</span>.
           </h1>
-          <p>I'm a Web Development Student at NTNU Gjøvik</p>
+          <p>Web Development Student at NTNU Gjøvik.</p>
         </div>
         {/* <div className="intro_image">
           <img

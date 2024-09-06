@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProjectItem.css";
+import githubIcon from "../../assets/svg/github.svg";
 
 const ProjectItem = ({ title, description, img, githubCode, liveSite }) => {
   return (
@@ -17,12 +18,22 @@ const ProjectItem = ({ title, description, img, githubCode, liveSite }) => {
 
             <div className="project_links">
               <div className="project_links_div">
-                <a href={githubCode} target="_blank">
-                  Code
-                </a>
-                <a href={liveSite} target="_blank">
-                  Live
-                </a>
+                <div className="githubCode">
+                  <a href={githubCode} target="_blank">
+                    Code
+                    <img src="/img/github.png" alt="" />
+                  </a>
+                </div>
+
+                <div className="githubCode">
+                  {liveSite ? (
+                    <a href={liveSite} target="_blank">
+                      Live <img src="/img/livesite.png" alt="" />
+                    </a>
+                  ) : (
+                    "Live site not available."
+                  )}
+                </div>
               </div>
             </div>
           </div>

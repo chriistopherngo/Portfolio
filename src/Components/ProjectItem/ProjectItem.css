@@ -35,6 +35,7 @@
             && h3{
                 font-size: 25px;
                 font-weight: 700;
+                margin-bottom: 12px;
             }
 
             && .project_links{
@@ -44,17 +45,31 @@
                 && .project_links_div{
                     display: flex;
                     gap: 10px;
-                }
 
-                && a {
-                    text-decoration: none;
-                    color: black;
-                    transition: transform 0.15s ease-in-out;
+                    && .githubCode{
 
-                    &&:hover{
-                        transform: scale(1.1);
+                        && img {
+                            width: 18px;
+                            height: 18px;
+                        }
+
+                        && a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 5px;
+                            text-decoration: none;
+                            color: black;
+                            transition: transform 0.15s ease-in-out;
+        
+                            &&:hover{
+                                transform: scale(1.1);
+                            }
+                        }
                     }
                 }
+
+               
             }
         }
     
@@ -88,8 +103,13 @@
     }
 
     .project_links{
-        justify-content: flex-start !important;
+        margin-top: 20px !important;
+        justify-content: flex-end !important;
         gap: 10px;
+  }
+
+  .experience_item{
+    gap: 40px !important;
   }
 }
 

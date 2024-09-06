@@ -30,7 +30,7 @@ const Projects = () => {
           description="Exam project in IDG2100 - Full-stack web development. The SUPER Assessor Interface empowers educators to create and manage assessment methods through an interactive card game. It facilitates collaboration by allowing educators to save, review, and share their assessment schemes for feedback. Administrators can manage content and user accounts through a dashboard, streamlining the assessment process and boosting creativity in education."
           img="/img/thesuperassessor.png"
           githubCode="https://github.com/ntnu-design/idg2100-2024-exam-achrolansk"
-          liveSite
+         
         />
         <ProjectItem
           title="Sustainability Diary"

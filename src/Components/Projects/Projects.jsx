@@ -13,7 +13,7 @@ const Projects = () => {
       <div className="project_container">
         <ProjectItem
           title="Fully Accessible Website"
-          description="As part of the IDG2012 - Web Accessibility, Usability and Ethics course, I developed a fully accessible website for my mom's music lesson school. This website is accessible for users with visual, hearing and mobility impairments."
+          description="As part of the IDG2012 - Web Accessibility, Usability and Ethics course, I developed a fully accessible (concept) website for my mom's music lesson school. This website is accessible for users with visual, hearing and mobility impairments."
           img="/img/lisas.png"
           technologies={["/img/html.png", "/img/css.webp", "/img/js.png"]}
           githubCode="https://github.com/chriistopherngo/course-project"

@@ -2,7 +2,7 @@ import React from "react";
 import "./ProjectItem.css";
 import githubIcon from "../../assets/svg/github.svg";
 
-const ProjectItem = ({ title, description, img, githubCode, liveSite }) => {
+const ProjectItem = ({ title, description, img, technologies = [], githubCode, liveSite }) => {
   return (
     <div className="wrapper_experience">
       <div className="project_item">
@@ -14,6 +14,11 @@ const ProjectItem = ({ title, description, img, githubCode, liveSite }) => {
             <div>
               <h3>{title}</h3>
               <p>{description}</p>
+              <div className="technologies_used">
+                {technologies.map((tech, index) => (
+                  <img key={index} src={tech} alt="" />
+                ))}
+              </div>
             </div>
 
             <div className="project_links">

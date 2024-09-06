@@ -3,7 +3,7 @@
     border: 0.5px solid transparent;
     padding: 5px;
     border-radius: 10px;
-    background: linear-gradient(180deg, 
+    background: linear-gradient(45deg, 
         #d41d6d 0%, 
         #8fb3ff 25%, 
         #a37fcf 75%, 
@@ -36,6 +36,17 @@
                 font-size: 25px;
                 font-weight: 700;
                 margin-bottom: 12px;
+            }
+
+            && .technologies_used{
+                margin: 20px 0 ;
+
+                && img{
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                }
+
             }
 
             && .project_links{

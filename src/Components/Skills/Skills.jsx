@@ -26,20 +26,20 @@ const Skills = () => {
           />
           <Card
             title="Frontend"
-            item_names={["CSS", "Tailwind", "React", "Vite", "Sass", "Vue"]}
+            item_names={["CSS", "React", "Vite", "Tailwind", "Sass", "Vue"]}
             item_images={[
               "/img/css.webp",
-              "/img/tailwind.png",
               "/img/react.svg",
               "/img/vite.png",
+              "/img/tailwind.png",
               "/img/sass.png",
               "/img/vue.webp",
             ]}
             item_links={[
               "https://developer.mozilla.org/en-US/docs/Web/CSS",
-              "https://tailwindcss.com/",
               "https://reactjs.org/",
               "https://vitejs.dev/",
+              "https://tailwindcss.com/",
               "https://sass-lang.com/",
               "https://vuejs.org/",
             ]}
@@ -68,36 +68,36 @@ const Skills = () => {
             "https://www.mongodb.com/",
           ]}
           />
-          <Card title="Infrastructure" item_names={["GitHub", "Docker", "Vercel", "Railway"]} item_images={[
+          <Card title="Infrastructure" item_names={["GitHub", "Docker", "Railway", "Vercel",]} item_images={[
             "/img/github.png",
             "/img/docker.png",
-            "/img/vercel.svg",
             "/img/railway.svg",
+            "/img/vercel.svg",
           ]} 
 
           item_links={[
             "https://github.com/",
             "https://www.docker.com/",
-            "https://vercel.com/",
             "https://railway.app/",
+            "https://vercel.com/",
           ]}
 
           />
-          <Card title="Tools" item_names={["Visual Studio Code", "Figma", "MySQLWorkbench", "Terminal/CLI", "Git"]} item_images={[
-            "/img/vscode.png",  
-            "/img/figma.png",
-            "/img/mysqlworkbench.webp",
+          <Card title="Tools" item_names={["Visual Studio Code", "Terminal/CLI", "Git", "MySQLWorkbench", "Figma"]} item_images={[
+            "/img/vscode.png", 
             "/img/terminal.png",
-            "/img/git.png",
+            "/img/git.png", 
+            "/img/mysqlworkbench.webp",
+            "/img/figma.png",
   
           ]}
           
           item_links={[
             "https://code.visualstudio.com/",
-            "https://www.figma.com/",
-            "https://www.mysql.com/products/workbench/",
             "https://en.wikipedia.org/wiki/Command-line_interface",
             "https://git-scm.com/",
+            "https://www.mysql.com/products/workbench/",
+            "https://www.figma.com/",
           ]}/>
         </div>
     </div>

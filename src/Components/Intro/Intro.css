@@ -1,0 +1,24 @@
+.gradient_name{
+    background: linear-gradient(90deg, 
+    #8FB3FF 0%,  
+    #A37FCF 50%,
+    #D41D6D 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.intro_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 170px 5% 0 5%;
+    height: 100vh;
+
+    && .intro_text h1{
+        font-size: 50px;
+    }
+}
+
+.intro_image img{
+    width: 100%;
+}

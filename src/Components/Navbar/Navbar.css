@@ -7,19 +7,28 @@ nav {
   color: white;
   /* background-color: white; */
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-  margin: 0 5%;
-  padding: 50px 0;
+  /* margin: 0 5%; */
+  padding: 50px 5%;
+  position: absolute;
+  width: 100%;
+  background-color: rgb(56,56,56);
 }
 
 nav a {
   all: unset;
   text-decoration: none;
   padding: 8px 16px;
+  transition: all 0.2s ease-in-out;
 }
 
 nav a:hover {
   cursor: pointer;
-  text-decoration: underline;
+  background: linear-gradient(90deg, 
+  #8FB3FF 0%,  
+  #A37FCF 50%,
+  #D41D6D 100%);
+  background-clip: text;
+  color: transparent;
 }
 
 nav li {
@@ -120,7 +129,8 @@ nav .contact_container a:hover{
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    /* top: 110px; */
+    margin-top: 10px;
     left: 0;
     background-color: #242424;
     width: 100%;

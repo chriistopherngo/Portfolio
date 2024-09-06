@@ -47,39 +47,40 @@ const Navbar = () => {
           </div>
           <ul>
             <>
-              <li onClick={toggleMenu}>
-                <Link
-                  to=""
-                  className={activeLink === "dashboard" ? "active" : ""}
-                >
-                  Projects
-                </Link>
-              </li>
-              <li onClick={toggleMenu}>
+              {/* <li onClick={toggleMenu}>
                 <Link
                   to=""
                   className={activeLink === "manageusers" ? "active" : ""}
                 >
                   Skills
                 </Link>
+              </li> */}
+
+              <li onClick={toggleMenu}>
+                <a href="#abouT">About</a>
               </li>
-              <li className="navbar_divider" onClick={toggleMenu}>
+              <li onClick={toggleMenu}>
+                <a href="#experienceS">Experience</a>
               </li>
+              <li onClick={toggleMenu}>
+                <a href="#projectS">Projects</a>
+              </li>
+              <li className="navbar_divider" onClick={toggleMenu}></li>
             </>
             <li>
-            <ul className="contact_container">
-              <li onClick={toggleMenu}>
-                <a href="https://github.com/chriistopherngo" target="_blank">
-                  <img className="githubIcon" src={githubIcon} alt="" />
-                </a>
-              </li>
-              <li onClick={toggleMenu}>
-                <a href="mailto:ngo.chris@hotmail.com" target="_blank">
-                  <img className="githubIcon" src={mailtoIcon} alt="" />
-                </a>
-              </li>
+              <ul className="contact_container">
+                <li onClick={toggleMenu}>
+                  <a href="https://github.com/chriistopherngo" target="_blank">
+                    <img className="githubIcon" src={githubIcon} alt="" />
+                  </a>
+                </li>
+                <li onClick={toggleMenu}>
+                  <a href="mailto:ngo.chris@hotmail.com" target="_blank">
+                    <img className="githubIcon" src={mailtoIcon} alt="" />
+                  </a>
+                </li>
               </ul>
-              </li>
+            </li>
           </ul>
         </div>
       </nav>

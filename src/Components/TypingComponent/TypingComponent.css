@@ -14,6 +14,15 @@ nav .logo .name {
   position: relative;
 }
 
+.tilde {
+  font-size: 30px;
+  background: linear-gradient(90deg, 
+    #8FB3FF 0%,  
+    #A37FCF 50%,
+    #D41D6D 100%);
+    background-clip: text;
+    color: transparent;
+}
 .underscore {
   opacity: 1;
   transition: opacity 0.28s ease-in-out;

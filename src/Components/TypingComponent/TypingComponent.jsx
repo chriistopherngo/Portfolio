@@ -33,9 +33,12 @@ const TypingComponent = () => {
     return () => clearInterval(underscoreIntervalId);
   }, []);
 
+  // Split the text into parts: tilde and the rest
+  const parts = text.split("~");
+  
   return (
     <span className="name">
-      {text}
+      {parts[0]}<span className="tilde">~</span>{parts[1]}
       <span className={`underscore ${showUnderscore ? "fade" : ""}`}>_</span>
     </span>
   );

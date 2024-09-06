@@ -63,8 +63,12 @@
 
 
 @media screen and (max-width: 900px) {
+    .wrapper_experience{
+        padding: 0 0 0 5% !important;
+    }
     .project_details_container{
         flex-direction: column;
+        padding: 5% !important;
 
         && .project_image{
             width: 100% !important;

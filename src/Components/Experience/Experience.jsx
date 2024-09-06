@@ -21,7 +21,7 @@ const Experience = () => {
         <ExperienceItem
           time="Fall 2023"
           title="Teaching Assistant"
-          name="NTNU Gjøvik"
+          name="NTNU Gjøvik (IDG1292 Web coding)"
           img="/img/ntnu.png"
           description={[
             "Teaching assistent in the labs",

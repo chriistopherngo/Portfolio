@@ -28,7 +28,7 @@ const Skills = () => {
             title="Frontend"
             item_names={["CSS", "Tailwind", "React", "Vite", "Sass", "Vue"]}
             item_images={[
-              "//img/css.webp",
+              "/img/css.webp",
               "/img/tailwind.png",
               "/img/react.svg",
               "/img/vite.png",

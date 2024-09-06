@@ -66,6 +66,14 @@
     .wrapper_experience{
         padding: 0 0 0 5% !important;
     }
+
+    #projectS{
+        padding: 0 5% 0 0 !important;
+    }
+
+    #cheating{
+        padding: 0 0 0 5% !important;
+    }
     .project_details_container{
         flex-direction: column;
         padding: 5% !important;

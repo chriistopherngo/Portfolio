@@ -15,7 +15,7 @@ const Projects = () => {
           title="Fully Accessible Website"
           description="As part of the IDG2012 - Web Accessibility, Usability and Ethics course, I developed a fully accessible (concept) website for my mom's music lesson school. This website is accessible for users with visual, hearing and mobility impairments."
           img="/img/lisas.png"
-          technologies={["/img/html.png", "/img/css.webp", "/img/js.png"]}
+          technologies={["/img/html.png", "/img/css.webp", "/img/javascript.png"]}
           githubCode="https://github.com/chriistopherngo/course-project"
           liveSite="https://chriistopherngo.github.io/course-project/"
         />
@@ -23,7 +23,7 @@ const Projects = () => {
           title="Scrollytelling Project"
           description="The website is based on the United Nations' Sustainable Development Goal 7, which is to ensure access to affordable, reliable, sustainable, and modern energy for all. Through an engaging and interactive storytelling format, the project aims to raise awareness about the importance of clean and affordable energy and inspire people to take action towards achieving this goal."
           img="/img/scrollytelling.png"
-          technologies={["/img/html.png", "/img/sass.png", "/img/js.png"]}
+          technologies={["/img/html.png", "/img/sass.png", "/img/javascript.png"]}
           githubCode="https://github.com/AdvancedCSS2023/assignment-3--scrollytelling-group_2"
           liveSite="https://advancedcss2023.github.io/assignment-3--scrollytelling-group_2/"
         />

@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ProjectItem.css";
-import githubIcon from "../../assets/svg/github.svg";
 
-const ProjectItem = ({ title, description, img, technologies = [], githubCode, liveSite }) => {
+const ProjectItem = ({
+  title,
+  description,
+  img,
+  technologies = [],
+  githubCode,
+  liveSite,
+}) => {
+  const [hoverIndex, setHoverIndex] = useState(null);
+
+  const handleMouseOver = (index) => {
+    setHoverIndex(index);
+  };
+
+  const handleMouseOut = () => {
+    setHoverIndex(null);
+  };
+
   return (
     <div className="wrapper_experience">
       <div className="project_item">
@@ -15,12 +31,28 @@ const ProjectItem = ({ title, description, img, technologies = [], githubCode, l
               <h3>{title}</h3>
               <p>{description}</p>
               <div className="technologies_used">
-                {technologies.map((tech, index) => (
-                  <img key={index} src={tech} alt="" />
-                ))}
+                {technologies.map((tech, index) => {
+                  const techName = tech
+                    .split("/")
+                    .pop()
+                    .replace(/\.(png|webp|svg)$/, "");
+
+                  return (
+                    <div key={index} className="tech_item">
+                      <img
+                        src={tech}
+                        alt={techName}
+                        onMouseOver={() => handleMouseOver(index)}
+                        onMouseOut={handleMouseOut}
+                      />
+                      {hoverIndex === index && (
+                        <div className="tech_hover">{techName}</div>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </div>
-
             <div className="project_links">
               <div className="project_links_div">
                 <div className="githubCode">
@@ -29,7 +61,6 @@ const ProjectItem = ({ title, description, img, technologies = [], githubCode, l
                     <img src="/img/github.png" alt="" />
                   </a>
                 </div>
-
                 <div className="githubCode">
                   {liveSite ? (
                     <a href={liveSite} target="_blank">

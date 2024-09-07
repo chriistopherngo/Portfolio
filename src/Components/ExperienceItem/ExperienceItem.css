@@ -36,7 +36,7 @@
     }
 
     && .experience_details {
-      background-color: aliceblue;
+      background: aliceblue;
       color: black;
       padding: 22px;
       border-radius: 6px;
@@ -62,6 +62,20 @@
       }
     }
   }
+}
+
+.gradient_shadowbox{
+  margin-top: -6px;
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(45deg, 
+    #d41d6d 0%, 
+    #8fb3ff 25%, 
+    #a37fcf 75%, 
+    #d41d6d 100%);
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 /* *{outline: 1px solid red;} */

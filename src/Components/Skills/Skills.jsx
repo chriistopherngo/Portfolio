@@ -13,7 +13,7 @@ const Skills = () => {
             item_names={["HTML", "JavaScript", "PHP", "Python"]}
             item_images={[
               "/img/html.png",
-              "/img/js.png",
+              "/img/javascript.png",
               "/img/php.png",
               "/img/python.png",
             ]}

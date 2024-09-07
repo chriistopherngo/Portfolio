@@ -35,7 +35,9 @@ const ExperienceItem = ({
                 </li>
               )}
             </ul>
+            {/* <div className="gradient_shadowbox">hello</div> */}
           </div>
+          <div className="gradient_shadowbox"></div>
         </div>
       </div>
     </div>

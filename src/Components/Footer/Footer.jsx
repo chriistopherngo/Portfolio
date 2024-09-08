@@ -7,6 +7,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div>© 2024 Christopher Ngo</div>
+      {/* <div>Built with <img src="/img/react.svg" alt="" /></div> */}
       <div className="contact_container">
         <a href="https://github.com/chriistopherngo" target="_blank">
           <img className="githubIcon" src={githubIcon} alt="" />

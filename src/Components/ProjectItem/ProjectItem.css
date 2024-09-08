@@ -42,6 +42,46 @@
         margin-bottom: 12px;
       }
 
+      && .explore_project {
+        && button {
+          border: none;
+          background: linear-gradient(
+            45deg,
+            #d41d6d 0%,
+            #8fb3ff 25%,
+            #a37fcf 75%,
+            #d41d6d 100%
+          );
+          padding: 2px 2px;
+          border-radius: 6px;
+          font-size: 16px;
+          cursor: pointer;
+          transition: transform 0.2s ease-in-out;
+
+          && > div {
+            background-color: rgba(247, 255, 255, 0.86);
+            padding: 8px 16px;
+            border-radius: 6px;
+          }
+
+          &&:hover {
+            transform: scale(1.05);
+          }
+
+          && span {
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            & * {
+              color: #a37fcf;
+            }
+          }
+        }
+      }
+
       && .technologies_used {
         margin: 20px 0;
         display: flex;
@@ -63,19 +103,14 @@
             position: absolute;
             text-transform: uppercase;
             font-size: 10px;
-            bottom: -20px; 
+            bottom: -20px;
             left: 50%;
             transform: translateX(-50%);
-            white-space: nowrap; 
-            background-color: rgba(
-              0,
-              0,
-              0,
-              0.7
-            ); 
-            color: white; 
-            padding: 2px 5px; 
-            border-radius: 3px; 
+            white-space: nowrap;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 2px 5px;
+            border-radius: 3px;
           }
         }
       }
@@ -114,6 +149,84 @@
   }
 }
 
+.modal_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: fixed;
+  bottom: -100%;
+  z-index: 1;
+  width: 90%;
+  height: 95%;
+  overflow: scroll;
+  background: linear-gradient(
+    45deg,
+    #d41d6d 0%,
+    #8fb3ff 25%,
+    #a37fcf 75%,
+    #d41d6d 100%
+  );
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px 10px 0 10px;
+
+  && .inner_modal {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    background-color: aliceblue;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    && .modal_close {
+      position: absolute;
+      z-index: 10000;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+}
+
+.modal-active {
+  animation: slideUp 0.35s forwards ease-in-out;
+}
+
+.modal-unactive {
+  animation: slideDown 0.35s forwards ease-in-out;
+}
+
+@keyframes slideUp {
+  from {
+    bottom: -100%;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -100%;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .wrapper_experience {
     padding: 0 0 0 5% !important;
@@ -148,6 +261,137 @@
   .experience_item {
     gap: 40px !important;
   }
+
+  .modal {
+    width: 100% !important;
+    height: 95% !important;
+  }
 }
 
 /* *{outline: 1px solid red;} */
+.modal_content {
+  color: black;
+  padding: 20px;
+
+  && .figure {
+    && figure.solo {
+      margin-left: -3px;
+    }
+
+    && figure {
+      margin: 4px 0px;
+      margin-left: 4px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      && img {
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+      }
+
+      && img.solo {
+        width: 28px;
+        height: 28px;
+      }
+      && figcaption {
+        margin-top: -10px;
+        text-transform: capitalize;
+
+        &&.individual {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  && h4 {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 20px 0;
+  }
+
+  && .innerProject_details {
+
+    && .content{
+      max-width: 80ch;
+    }
+
+    && h5{
+      font-size: 17px;
+      margin: 15px 0 5px 0;
+      font-weight: 500;
+    }
+
+    && .linkane{
+      margin: 10px 0;
+    }
+    && .screenshots_container {
+      width: 100%;
+      background: linear-gradient(
+        45deg,
+        #d41d6d 0%,
+        #8fb3ff 25%,
+        #a37fcf 75%,
+        #d41d6d 100%
+      );
+      padding: 10px;
+      border-radius: 10px;
+
+      && .screenshots.with_images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+
+      && .screenshots {
+        width: 100%;
+        height: 275px;
+        overflow: scroll;
+        display: flex;
+        gap: 10px;
+
+        && img{
+          height: 100%;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+/* ork */
+.project_links_div {
+  display: flex;
+  gap: 10px;
+
+  && .githubCode {
+    && img {
+      width: 18px;
+      height: 18px;
+    }
+
+    && a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      text-decoration: none;
+      color: black;
+      transition: transform 0.15s ease-in-out;
+
+      &&:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

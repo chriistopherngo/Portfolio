@@ -79,6 +79,7 @@ const Skills = () => {
           item_links={[
             "https://github.com/",
             "https://www.docker.com/",
+            "https://www.chameleoncloud.org/",
             "https://railway.app/",
             "https://vercel.com/",
           ]}
@@ -99,6 +100,7 @@ const Skills = () => {
             "https://en.wikipedia.org/wiki/Command-line_interface",
             "https://git-scm.com/",
             "https://www.mysql.com/products/workbench/",
+            "https://docs.docker.com/compose/",
             "https://www.figma.com/",
           ]}/>
         </div>

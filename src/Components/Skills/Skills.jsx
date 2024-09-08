@@ -90,7 +90,7 @@ const Skills = () => {
             "/img/git.png", 
             "/img/mysqlworkbench.webp",
             "/img/dockercompose.png",
-            "/img/figma.png",
+            "/img/figma.webp",
   
           ]}
           

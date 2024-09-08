@@ -12,7 +12,7 @@ const Projects = () => {
 
       <div className="project_container">
       <ProjectItem
-          title="Fake reddit"
+          title="Fake Reddit"
           description="Forum web application, inspired by Reddit. This platform allows users to create topic-specific categories, make posts, and like posts from others. Users must sign up and log in to access all features. Part of the IDG 2001 Cloud Technologies course."
           insideProjectDesc = "This platform allows users to create topic-specific categories, make posts, and like posts from others. Users must sign up and log in to access all features. The application was developed using a MySQL database, Flask for the API, and React for the frontend. All components are deployed in Docker containers via Docker Compose on a Chameleon Cloud virtual machine."
           img="/img/fakereddit.png"

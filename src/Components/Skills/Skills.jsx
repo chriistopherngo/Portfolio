@@ -68,8 +68,7 @@ const Skills = () => {
             "https://www.mongodb.com/",
           ]}
           />
-          <Card title="Infrastructures" item_names={["GitHub", "Docker", "Chameleon Cloud", "Railway", "Vercel",]} item_images={[
-            "/img/github.png",
+          <Card title="Infrastructures" item_names={["Docker", "Chameleon Cloud", "Railway", "Vercel",]} item_images={[
             "/img/docker.png",
             "/img/chameleoncloud.png",
             "/img/railway.svg",
@@ -77,7 +76,6 @@ const Skills = () => {
           ]} 
 
           item_links={[
-            "https://github.com/",
             "https://www.docker.com/",
             "https://www.chameleoncloud.org/",
             "https://railway.app/",
@@ -85,9 +83,10 @@ const Skills = () => {
           ]}
 
           />
-          <Card title="Tools" item_names={["Visual Studio Code", "Terminal/CLI", "Git", "MySQLWorkbench", "Docker Compose", "Figma"]} item_images={[
+          <Card title="Tools" item_names={["Visual Studio Code", "Terminal/CLI", "Github", "Git", "MySQLWorkbench", "Docker Compose", "Figma"]} item_images={[
             "/img/vscode.png", 
             "/img/terminal.png",
+            "/img/github.png",
             "/img/git.png", 
             "/img/mysqlworkbench.webp",
             "/img/dockercompose.png",
@@ -98,6 +97,7 @@ const Skills = () => {
           item_links={[
             "https://code.visualstudio.com/",
             "https://en.wikipedia.org/wiki/Command-line_interface",
+            "https://github.com/",
             "https://git-scm.com/",
             "https://www.mysql.com/products/workbench/",
             "https://docs.docker.com/compose/",

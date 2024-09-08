@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./ProjectItem.css";
 import { IoClose } from "react-icons/io5";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -13,10 +13,20 @@ const ProjectItem = ({
   workFormat,
   insideProjectDesc,
   insideProjectImg = [],
+  contributors = [],
 }) => {
   const [hoverIndex, setHoverIndex] = useState(null);
   const [modalContainer, setModalContainer] = useState(false);
   const [modal, setModal] = useState(false);
+  const [modalOpacity, setModalOpacity] = useState(0);
+
+  useEffect(() => {
+    setModalOpacity(0);
+    const timer = setTimeout(() => {
+      setModalOpacity(1);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const handleMouseOver = (index) => {
     setHoverIndex(index);
@@ -85,14 +95,22 @@ const ProjectItem = ({
               <div className="project_links">
                 <div className="project_links_div">
                   <div className="githubCode">
-                    <a href={githubCode} target="_blank">
+                    <a
+                      href={githubCode}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Code
                       <img src="/img/github.png" alt="" />
                     </a>
                   </div>
                   <div className="githubCode">
                     {liveSite ? (
-                      <a href={liveSite} target="_blank">
+                      <a
+                        href={liveSite}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Live <img src="/img/livesite.png" alt="" />
                       </a>
                     ) : (
@@ -108,7 +126,10 @@ const ProjectItem = ({
 
       {modalContainer && <div className="modal_container"></div>}
 
-      <div className={`modal ${modal ? "modal-active" : "modal-unactive"}`}>
+      <div
+        className={`modal ${modal ? "modal-active" : "modal-unactive"}`}
+        style={{ opacity: modalOpacity }}
+      >
         <div className="inner_modal">
           <div className="modal_close">
             <IoClose color="black" onClick={() => closeModal()} />
@@ -116,10 +137,10 @@ const ProjectItem = ({
           <div className="modal_content">
             <div className="figure">
               <figure
-                className={`${workFormat == "/img/solo.png" ? "solo" : ""} `}
+                className={`${workFormat === "/img/solo.png" ? "solo" : ""} `}
               >
                 <img
-                  className={`${workFormat == "/img/solo.png" ? "solo" : ""} `}
+                  className={`${workFormat === "/img/solo.png" ? "solo" : ""} `}
                   src={workFormat}
                   alt=""
                 />
@@ -137,21 +158,61 @@ const ProjectItem = ({
               <div className="content">
                 <h5>Project description</h5>
                 <p>{insideProjectDesc}</p>
-                <h5>Project process</h5>
+                <h5>About</h5>
                 <p>..</p>
-              </div>
+                <h5>Technologies used</h5>
+                <div className="technologies_used">
+                  {technologies.map((tech, index) => {
+                    const techName = tech
+                      .split("/")
+                      .pop()
+                      .replace(/\.(png|webp|svg)$/, "");
 
+                    return (
+                      <div key={index} className="tech_item">
+                        <img
+                          src={tech}
+                          alt={techName}
+                          onMouseOver={() => handleMouseOver(index)}
+                          onMouseOut={handleMouseOut}
+                        />
+                        {hoverIndex === index && (
+                          <div className="tech_hover">{techName}</div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+                {workFormat === "/img/group.png" ? <h5>Contributors</h5> : null}
+                <ul className="contributors">
+                  {contributors.length > 0
+                    ? contributors.map((contributor, index) => (
+                        <li key={index}>{contributor}</li>
+                      ))
+                    : null}
+                </ul>
+              </div>
+              
+              <h5>Github code and live site</h5>
               <div className="linkane">
                 <div className="project_links_div">
                   <div className="githubCode">
-                    <a href={githubCode} target="_blank">
+                    <a
+                      href={githubCode}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       Code
                       <img src="/img/github.png" alt="" />
                     </a>
                   </div>
                   <div className="githubCode">
                     {liveSite ? (
-                      <a href={liveSite} target="_blank">
+                      <a
+                        href={liveSite}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Live <img src="/img/livesite.png" alt="" />
                       </a>
                     ) : (
@@ -162,7 +223,11 @@ const ProjectItem = ({
               </div>
               <h5>Screenshots (swipe)</h5>
               <div className="screenshots_container">
-                <div className={`screenshots ${insideProjectImg.length == 0 ? "with_images" : ""}`} >
+                <div
+                  className={`screenshots ${
+                    insideProjectImg.length === 0 ? "with_images" : ""
+                  }`}
+                >
                   {insideProjectImg.length > 0 ? (
                     insideProjectImg.map((img, index) => (
                       <img

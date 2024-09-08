@@ -32,6 +32,7 @@ const Projects = () => {
           liveSite="https://advancedcss2023.github.io/assignment-3--scrollytelling-group_2/"
           workFormat="/img/group.png"
           insideProjectImg ={[]}
+          contributors = {['Shnizana Korolova', 'Edgar Dahl']}
         />
         <ProjectItem
           title="The SUPER Assessor"
@@ -42,6 +43,7 @@ const Projects = () => {
           githubCode="https://github.com/ntnu-design/idg2100-2024-exam-achrolansk"
           workFormat="/img/group.png"
           insideProjectImg ={[]}
+          contributors = {['Andreas Christiansen', 'Ola Nikolai Skjeret']}
          
         />
         <ProjectItem
@@ -54,6 +56,7 @@ const Projects = () => {
           liveSite="https://team1.sustainability.it.ntnu.no/"
           workFormat="/img/group.png"
           insideProjectImg ={[]}
+          contributors = {['Ola Nikolai Skjeret', 'Jørgen Nonstad', 'Solveig Ranøien Engen']}
         />
         <ProjectItem
           title="CSS Game"
@@ -65,6 +68,7 @@ const Projects = () => {
           liveSite="https://advancedcss2023.github.io/assignment-2---css-games-group_2/"
           workFormat="/img/group.png"
           insideProjectImg ={[]}
+          contributors = {['Shnizana Korolova', 'Edgar Dahl']}
         />
       </div>
     </div>

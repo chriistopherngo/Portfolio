@@ -116,6 +116,7 @@
       }
 
       && .project_links {
+        margin-top: 20px;
         display: flex;
         justify-content: flex-end;
 
@@ -319,6 +320,12 @@
 
     && .content{
       max-width: 80ch;
+
+      && .contributors{
+        &&  li{
+          margin-left: 25px;
+        }
+      }
     }
 
     && h5{
@@ -392,6 +399,39 @@
       &&:hover {
         transform: scale(1.1);
       }
+    }
+  }
+}
+
+.technologies_used {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+
+  && img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+  && .tech_item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    && .tech_hover {
+      position: absolute;
+      text-transform: uppercase;
+      font-size: 10px;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 2px 5px;
+      border-radius: 3px;
     }
   }
 }

@@ -24,7 +24,7 @@ const Experience = () => {
           name="NTNU Gjøvik (IDG1292 Web coding)"
           img="/img/ntnu.png"
           description={[
-            "Teaching assistent in the labs",
+            "Teaching assistant in the labs",
             "Focus on HTML, CSS, responsive design, validating code etc.",
             "Helping and grading student's assignments",
           ]}

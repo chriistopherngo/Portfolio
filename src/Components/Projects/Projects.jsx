@@ -20,7 +20,7 @@ const Projects = () => {
           githubCode="https://github.com/AndrChr0/cloud-assignment-2"
           liveSite="http://129.114.27.140/"
           workFormat="/img/group.png"
-          insideProjectImg = {['/img/fakereddit_1.png', '/img/fakereddit_2.png', '/img/fakereddit_3.png', '/img/fakereddit_4.png', '/img/fakereddit_5.png', '/img/fakereddit_6.png']}
+          insideProjectImg = {['/img/fakereddit.png','/img/fakereddit_1.png', '/img/fakereddit_2.png', '/img/fakereddit_3.png', '/img/fakereddit_4.png', '/img/fakereddit_5.png', '/img/fakereddit_6.png']}
           contributors = {['Ola Nikolai Skjeret', 'Andreas Christiansen']}
         />
         <ProjectItem

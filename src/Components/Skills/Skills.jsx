@@ -68,9 +68,10 @@ const Skills = () => {
             "https://www.mongodb.com/",
           ]}
           />
-          <Card title="Infrastructure" item_names={["GitHub", "Docker", "Railway", "Vercel",]} item_images={[
+          <Card title="Infrastructures" item_names={["GitHub", "Docker", "Chameleon Cloud", "Railway", "Vercel",]} item_images={[
             "/img/github.png",
             "/img/docker.png",
+            "/img/chameleoncloud.png",
             "/img/railway.svg",
             "/img/vercel.svg",
           ]} 
@@ -83,11 +84,12 @@ const Skills = () => {
           ]}
 
           />
-          <Card title="Tools" item_names={["Visual Studio Code", "Terminal/CLI", "Git", "MySQLWorkbench", "Figma"]} item_images={[
+          <Card title="Tools" item_names={["Visual Studio Code", "Terminal/CLI", "Git", "MySQLWorkbench", "Docker Compose", "Figma"]} item_images={[
             "/img/vscode.png", 
             "/img/terminal.png",
             "/img/git.png", 
             "/img/mysqlworkbench.webp",
+            "/img/dockercompose.png",
             "/img/figma.png",
   
           ]}

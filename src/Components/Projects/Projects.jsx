@@ -63,7 +63,7 @@ const Projects = () => {
           description="The Digital Sustainability Diary helps students engage with the UN's 17 sustainability goals by journaling their daily activities and reflections. It encourages students to explore how their actions align with these goals, promoting personal growth and a deeper understanding of sustainability. Teachers are the ones to make the tasks. Part of the IDG2671 - Web Project course."
           insideProjectDesc="The Digital Sustainability Diary helps students engage with the UN's 17 sustainability goals by journaling their daily activities and reflections. It encourages students to explore how their actions align with these goals, promoting personal growth and a deeper understanding of sustainability. Teachers are the ones to make the tasks. Part of the IDG2671 - Web Project course."
           img="/img/journals.png"
-          technologies={["/img/mongodb.webp", "/img/express.png", "/img/react.svg", "/img/node.webp",]}
+          technologies={["/img/mongodb.webp", "/img/express.png", "/img/react.svg", "/img/node.webp", "/img/docker.png", "/img/dockercompose.png"]}
           githubCode="https://github.com/Ninejar/cautious-adventure"
           liveSite="https://team1.sustainability.it.ntnu.no/"
           workFormat="/img/group.png"

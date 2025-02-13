@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./ProjectItem.css";
 import { IoClose } from "react-icons/io5";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+
 
 const ProjectItem = ({
   title,
@@ -19,6 +22,23 @@ const ProjectItem = ({
   const [modalContainer, setModalContainer] = useState(false);
   const [modal, setModal] = useState(false);
   const [modalOpacity, setModalOpacity] = useState(0);
+
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (modal === false){
+      navigate("/");
+    }
+  }, [modal]);
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   useEffect(() => {
     setModalOpacity(0);
@@ -51,7 +71,7 @@ const ProjectItem = ({
   return (
     <>
       <div className="wrapper_experience">
-        <div className="project_item">
+        <div id={`${title.toLowerCase().replace(/\s+/g, "-")}`} className="project_item">
           <div className="project_details_container">
             <div className="project_image">
               <img src={img} alt="" />
@@ -83,6 +103,7 @@ const ProjectItem = ({
                   })}
                 </div>
               </div>
+              <Link to={`/project/#${title.toLowerCase().replace(/\s+/g, "-")}`}>
               <div className="explore_project">
                 <button onClick={() => openProject()}>
                   <div>
@@ -92,6 +113,7 @@ const ProjectItem = ({
                   </div>
                 </button>
               </div>
+              </Link>
               <div className="project_links">
                 <div className="project_links_div">
                   <div className="githubCode">
@@ -131,9 +153,11 @@ const ProjectItem = ({
         style={{ opacity: modalOpacity }}
       >
         <div className="inner_modal">
+          <Link to="/">
           <div className="modal_close">
             <IoClose color="black" onClick={() => closeModal()} />
           </div>
+          </Link>
           <div className="modal_content">
             <div className="figure">
               <figure

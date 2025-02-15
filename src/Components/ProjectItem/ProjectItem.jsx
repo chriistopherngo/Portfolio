@@ -103,7 +103,7 @@ const ProjectItem = ({
                   })}
                 </div>
               </div>
-              <Link to={`/project/#${title.toLowerCase().replace(/\s+/g, "-")}`}>
+              <Link to={`/#${title.toLowerCase().replace(/\s+/g, "-")}`}>
               <div className="explore_project">
                 <button onClick={() => openProject()}>
                   <div>

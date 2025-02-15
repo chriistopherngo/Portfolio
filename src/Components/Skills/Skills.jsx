@@ -47,9 +47,9 @@ const Skills = () => {
             ]}
           />
           <Card title="Backend" 
-          item_names={["Node", "Express", "Laravel", "", ""]} 
+          item_names={["Node.js", "Express", "Laravel", "", ""]} 
           item_images={[
-            "/img/node.webp",
+            "/img/nodejs.webp",
             "/img/express.png",
             "/img/laravel.png",
           ]} 

@@ -51,7 +51,7 @@ const Projects = () => {
           description="Exam project in IDG2100 - Full-stack web development. The SUPER Assessor Interface empowers educators to create and manage assessment methods through an interactive card game. It facilitates collaboration by allowing educators to save, review, and share their assessment schemes for feedback. Administrators can manage content and user accounts through a dashboard, streamlining the assessment process and boosting creativity in education."
           insideProjectDesc ="Exam project in IDG2100 - Full-stack web development. The SUPER Assessor Interface empowers educators to create and manage assessment methods through an interactive card game. It facilitates collaboration by allowing educators to save, review, and share their assessment schemes for feedback. Administrators can manage content and user accounts through a dashboard, streamlining the assessment process and boosting creativity in education."
           img="/img/thesuperassessor.png"
-          technologies={["/img/mongodb.webp", "/img/express.png", "/img/react.svg", "/img/node.webp",]}
+          technologies={["/img/mongodb.webp", "/img/express.png", "/img/react.svg", "/img/nodejs.webp",]}
           githubCode="https://github.com/ntnu-design/idg2100-2024-exam-achrolansk"
           workFormat="/img/group.png"
           insideProjectImg ={[]}
@@ -63,7 +63,7 @@ const Projects = () => {
           description="The Digital Sustainability Diary helps students engage with the UN's 17 sustainability goals by journaling their daily activities and reflections. It encourages students to explore how their actions align with these goals, promoting personal growth and a deeper understanding of sustainability. Teachers are the ones to make the tasks. Part of the IDG2671 - Web Project course."
           insideProjectDesc="The Digital Sustainability Diary helps students engage with the UN's 17 sustainability goals by journaling their daily activities and reflections. It encourages students to explore how their actions align with these goals, promoting personal growth and a deeper understanding of sustainability. Teachers are the ones to make the tasks. Part of the IDG2671 - Web Project course."
           img="/img/journals.png"
-          technologies={["/img/mongodb.webp", "/img/express.png", "/img/react.svg", "/img/node.webp", "/img/docker.png", "/img/dockercompose.png"]}
+          technologies={["/img/mongodb.webp", "/img/express.png", "/img/react.svg", "/img/nodejs.webp", "/img/docker.png", "/img/dockercompose.png"]}
           githubCode="https://github.com/Ninejar/cautious-adventure"
           liveSite="https://team1.sustainability.it.ntnu.no/"
           workFormat="/img/group.png"

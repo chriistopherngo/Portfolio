@@ -18,3 +18,10 @@ body{
 .msg{
     color: white;
 }
+/* For Webkit browsers (Chrome, Safari, Edge, Opera) */
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  

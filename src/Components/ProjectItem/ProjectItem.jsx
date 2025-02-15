@@ -27,10 +27,11 @@ const ProjectItem = ({
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (modal === false){
+    if (modal === false ) {
       navigate("/");
     }
   }, [modal]);
+
   useEffect(() => {
     if (location.hash) {
       const element = document.getElementById(location.hash.substring(1));
@@ -153,11 +154,11 @@ const ProjectItem = ({
         style={{ opacity: modalOpacity }}
       >
         <div className="inner_modal">
-          <Link to="/">
+          {/* <Link> */}
           <div className="modal_close">
             <IoClose color="black" onClick={() => closeModal()} />
           </div>
-          </Link>
+          {/* </Link> */}
           <div className="modal_content">
             <div className="figure">
               <figure

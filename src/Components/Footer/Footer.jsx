@@ -6,7 +6,7 @@ import mailtoIcon from "../../assets/svg/mailto.svg";
 const Footer = () => {
   return (
     <div className="footer">
-      <div>© 2024 Christopher Ngo. All rights reserved.</div>
+      <div>© 2025 Christopher Ngo. All rights reserved.</div>
       {/* <div>Built with <img src="/img/react.svg" alt="" /></div> */}
       <div className="contact_container">
         <a href="https://github.com/chriistopherngo" target="_blank">

@@ -49,6 +49,21 @@ const ProjectItem = ({
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    const ifUserPressEsc = (e) => {
+      if (e.key === "Escape") {
+        closeModal();
+      }
+    };
+
+    window.addEventListener("keydown", ifUserPressEsc);
+    
+    return () => {
+      window.removeEventListener("keydown", ifUserPressEsc);
+    };
+  }, []);
+
+
   const handleMouseOver = (index) => {
     setHoverIndex(index);
   };
@@ -154,11 +169,9 @@ const ProjectItem = ({
         style={{ opacity: modalOpacity }}
       >
         <div className="inner_modal">
-          {/* <Link> */}
           <div className="modal_close">
             <IoClose color="black" onClick={() => closeModal()} />
           </div>
-          {/* </Link> */}
           <div className="modal_content">
             <div className="figure">
               <figure

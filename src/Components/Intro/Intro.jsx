@@ -10,7 +10,7 @@ const Intro = () => {
             Hi, I'm <span class="gradient_name">Christopher Ngo</span>.
           </h1>
           {/* <p>Web Development Student at NTNU Gjøvik.</p> */}
-          <p> I'm a <span className="gradient_name">Fullstack Web Developer</span> based in Gjøvik, Norway. I turn ideas into real applications.</p>
+          <p> I'm a <span className="gradient_name">Full-stack Web Developer</span> based in Gjøvik, Norway. I turn ideas into real applications.</p>
         </div>
         {/* <div className="intro_image">
           <img

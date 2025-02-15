@@ -10,7 +10,7 @@ const Experience = () => {
       <ExperienceItem
           time="Spring 2025"
           title="Teaching Assistant"
-          name="NTNU Gjøvik (IDG2100 Fullstack Web development & IDG2671 Web Project)"
+          name="NTNU Gjøvik (IDG2100 Full stack Web development & IDG2671 Web Project)"
           img="/img/ntnu.png"
           description={[
             "Teaching assistant in the labs",
@@ -24,9 +24,9 @@ const Experience = () => {
           name="Kodeo AS"
           img="/img/kodeo.jpeg"
           description={[
-            "Developed functionalities for client's website",
+            "Developed a meeting room booking system for client",
             "Introduced to Laravel",
-            "Full stack development",
+            "Full-stack development",
           ]}
         />
         <ExperienceItem
@@ -58,7 +58,7 @@ const Experience = () => {
           name="NTNU Gjøvik"
           img="/img/ntnu.png"
           description={[
-            "Frontend, backend and fullstack development",
+            "Frontend, backend and full-stack development",
             "User experience and design",
             "Project management",
             "Web security",

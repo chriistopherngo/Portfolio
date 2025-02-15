@@ -7,6 +7,17 @@ const Experience = () => {
     <div className="wrapper" id="experienceS">
       <SectionHeading preh2="What I have done" heading="Experience." />
       <div className="experience_container">
+      <ExperienceItem
+          time="Spring 2025"
+          title="Teaching Assistant"
+          name="NTNU Gjøvik (IDG2100 Fullstack Web development & IDG2671 Web Project)"
+          img="/img/ntnu.png"
+          description={[
+            "Teaching assistant in the labs",
+            "Focus on Web Components, MERN Stack, REST API, Docker, CI/CD, Testing etc.",
+            "Helping and grading student's assignments",
+          ]}
+        />
         <ExperienceItem
           time="Aug 2024 – Oct 2024"
           title="Internship"
@@ -47,7 +58,7 @@ const Experience = () => {
           name="NTNU Gjøvik"
           img="/img/ntnu.png"
           description={[
-            "Frontend and backend development",
+            "Frontend, backend and fullstack development",
             "User experience and design",
             "Project management",
             "Web security",

@@ -14,11 +14,48 @@
     padding: 170px 0% 0 0%;
     height: 62vh;
 
-    && .intro_text h1{
-        font-size: 50px;
+    && .intro_text{
+        width: 50%;
+
+        && h1{
+            font-size: 55px;
+            margin-bottom: 25px;
+        }
+
+        && p{
+            font-size: 20px;
+            line-height: 1.5;
+            font-weight: 500;
+        }
     }
+
 }
 
 .intro_image img{
-    width: 100%;
+    width: 70%;
 }
+
+/* @media screen and (max-width: 900px) {
+    .intro_container{
+        flex-direction: column;
+    }
+} */
+
+@media screen and (max-width: 1111px) {
+    .intro_container{
+        && .intro_text{
+            width: 100%;
+    
+            && h1{
+                font-size: 50px;
+            }
+            && p{
+                font-size: 18px;
+            }
+        }
+    
+    }
+
+
+   
+  }

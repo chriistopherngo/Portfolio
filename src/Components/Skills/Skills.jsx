@@ -10,25 +10,28 @@ const Skills = () => {
         <div className="skills_container">
           <Card
             title="Languages"
-            item_names={["HTML", "JavaScript", "PHP", "Python"]}
+            item_names={["HTML", "CSS", "JavaScript", "PHP", "Python", "SQL"]}
             item_images={[
               "/img/html.png",
+              "/img/css.webp",
               "/img/javascript.png",
               "/img/php.png",
               "/img/python.png",
+              "/img/sql.png",
             ]}
             item_links={[
               "https://developer.mozilla.org/en-US/docs/Web/HTML",
+              "https://developer.mozilla.org/en-US/docs/Web/CSS",
               "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
               "https://www.php.net/",
               "https://www.python.org/",
+              "https://developer.mozilla.org/en-US/docs/Glossary/SQL"
             ]}
           />
           <Card
             title="Frontend"
-            item_names={["CSS", "React", "Vite", "Tailwind", "Sass", "Vue"]}
+            item_names={["React", "Vite", "Tailwind", "Sass", "Vue"]}
             item_images={[
-              "/img/css.webp",
               "/img/react.svg",
               "/img/vite.png",
               "/img/tailwind.png",
@@ -36,7 +39,6 @@ const Skills = () => {
               "/img/vue.webp",
             ]}
             item_links={[
-              "https://developer.mozilla.org/en-US/docs/Web/CSS",
               "https://reactjs.org/",
               "https://vitejs.dev/",
               "https://tailwindcss.com/",
@@ -81,8 +83,15 @@ const Skills = () => {
             "https://railway.app/",
             "https://vercel.com/",
           ]}
-
           />
+          <Card title="CMS" item_names={["Sanity", "", "", "", ""]} item_images={[
+          "/img/sanity.png", 
+  
+          ]}
+          
+          item_links={[
+            "https://www.sanity.io/",
+          ]}/>
           <Card title="Tools" item_names={["Visual Studio Code", "Terminal/CLI", "Github", "Git", "MySQLWorkbench", "Docker Compose", "Figma"]} item_images={[
             "/img/vscode.png", 
             "/img/terminal.png",
@@ -103,6 +112,8 @@ const Skills = () => {
             "https://docs.docker.com/compose/",
             "https://www.figma.com/",
           ]}/>
+
+       
         </div>
     </div>
   );

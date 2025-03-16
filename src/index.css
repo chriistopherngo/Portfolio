@@ -19,11 +19,11 @@
   scroll-behavior: smooth;
 }
 
-/* main {
-  height: 100dvh;
-  margin: 0 5%;
-  padding: 1rem 0;
-} */
+main {
+  width:100%;
+  max-width: 1410px;
+  margin: 0 auto;
+}
 
 .wrapper{
   padding: 0 5%;

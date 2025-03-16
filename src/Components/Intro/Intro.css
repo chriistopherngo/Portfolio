@@ -13,6 +13,7 @@
     align-items: flex-start;
     padding: 170px 0% 0 0%;
     height: 62vh;
+    gap: 50px;
 
     && .intro_text{
         width: 50%;
@@ -30,21 +31,121 @@
     }
 
 }
+/* *{outline: 0.5px solid red;} */
 
-.intro_image img{
-    width: 70%;
+.image_me{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10000px;
+}
+
+
+.intro_image_outer{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(90deg, 
+    #8FB3FF 0%,  
+    #A37FCF 50%,
+    #D41D6D 100%);
+    border-radius: 10000px;
+
+    padding: 4px;
+
+    && .intro_image_inner{
+        border-radius: 10000px;
+        background-color: aliceblue;
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .intro_container{
+        padding: 140px 0% 0 0%;
+    }
+
+    .intro_text_mobile{
+        text-align: right;
+    }
+
+    .intro_image_outer.mobile{
+        margin-top: 40px;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .intro_container{
+        flex-direction: column;
+        height: auto;
+
+        && .intro_text{
+            width: 100%;
+
+            && h1{
+                font-size: 50px;
+            }
+            && p{
+                font-size: 18px;
+            }
+        }
+    }
+
+    .intro_image_outer{
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+    }
+
+    .intro_text{
+        /* margin-bottom: 50px; */
+
+        && h1{
+            font-size: 40px !important; 
+        }
+    }
 }
 
 /* @media screen and (max-width: 900px) {
     .intro_container{
         flex-direction: column;
+        height: auto;
+        padding: 120px 0% 0 0%;
+
+        && .intro_text{
+            width: 100%;
+
+            && h1{
+                font-size: 50px;
+            }
+            && p{
+                font-size: 18px;
+            }
+        }
+    }
+
+    .intro_image_outer{
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+    }
+
+    .intro_text{
+        margin-bottom: 50px;
+
+        && h1{
+            font-size: 40px !important; 
+        }
     }
 } */
 
 @media screen and (max-width: 1111px) {
     .intro_container{
         && .intro_text{
-            width: 100%;
+            /* width: 100%; */
     
             && h1{
                 font-size: 50px;

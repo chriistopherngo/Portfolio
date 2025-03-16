@@ -1,18 +1,20 @@
 
 nav {
+  transition: all 0.3s ease;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 70px;
   color: white;
-  /* background-color: white; */
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-  /* margin: 0 5%; */
   padding: 50px 5%;
-  position: absolute;
+  position: fixed;
   width: 100%;
   background-color: rgb(56,56,56);
-  /* background-color: #27272af2; */
+  z-index: 1000;
+}
+nav.scrolled {
+  height: 50px; 
+  padding: 25px 5%; 
 }
 
 nav a {
@@ -130,7 +132,6 @@ nav .contact_container a:hover{
     display: none;
     flex-direction: column;
     position: absolute;
-    /* top: 110px; */
     margin-top: 10px;
     left: 0;
     background-color: #242424;

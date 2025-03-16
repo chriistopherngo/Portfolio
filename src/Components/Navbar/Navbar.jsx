@@ -7,13 +7,41 @@ import mailtoIcon from "../../assets/svg/mailto.svg";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScrollWithOffset = (e, targetId) => {
+    e.preventDefault(); 
+    const target = document.querySelector(targetId);
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop - 85
+      });
+    }
+  };
+
   return (
     <>
-      <nav>
+      <nav className={isScrolled ? "scrolled" : ""}>
         <div className="logo">
           <ul>
             <li onClick={toggleMenu}>
@@ -31,13 +59,13 @@ const Navbar = () => {
           <ul>
             <>
               <li onClick={toggleMenu}>
-                <a href="#abouT">About</a>
+                <a href="#abouT" onClick={(e) => handleScrollWithOffset(e, "#abouT")}>About</a>
               </li>
               <li onClick={toggleMenu}>
-                <a href="#experienceS">Experience</a>
+                <a href="#experienceS" onClick={(e) => handleScrollWithOffset(e, "#experienceS")}>Experience</a>
               </li>
               <li onClick={toggleMenu}>
-                <a href="#projectS">Projects</a>
+                <a href="#projectS" onClick={(e) => handleScrollWithOffset(e, "#projectS")}>Projects</a>
               </li>
               <li className="navbar_divider" onClick={toggleMenu}></li>
             </>

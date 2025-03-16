@@ -159,7 +159,12 @@ nav .contact_container a:hover{
     text-decoration: none;
   }
   nav .navbar_divider{
-    border-bottom: 1px solid gray;
+    /* border-bottom: 1px solid gray; */
+    height: 1px;
+    background: linear-gradient(90deg, 
+    #8FB3FF 0%,  
+    #A37FCF 50%,
+    #D41D6D 100%);
     width: 100px;
     position: relative;
     z-index: 90000000;

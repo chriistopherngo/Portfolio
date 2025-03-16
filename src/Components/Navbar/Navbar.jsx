@@ -68,6 +68,7 @@ const Navbar = ({ visible }) => {
                 <a href="#projectS" onClick={(e) => handleScrollWithOffset(e, "#projectS")}>Projects</a>
               </li>
               <li className="navbar_divider" onClick={toggleMenu}></li>
+              {isScrolled && (<li onClick={toggleMenu}><a href="#top">Scroll to top</a></li>)}
             </>
             <li>
               <ul className="contact_container">

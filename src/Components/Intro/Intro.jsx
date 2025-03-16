@@ -23,7 +23,7 @@ const Intro = () => {
   }, []); 
 
   return (
-    <div className="wrapper">
+    <div className="wrapper" id="top">
       {!isMobile && (
         <>
           <div className="intro_container">

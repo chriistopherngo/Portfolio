@@ -168,6 +168,7 @@
   bottom: -100%;
   z-index: 1;
   width: 90%;
+  max-width: 1410px;
   height: 95%;
   overflow: scroll;
   background: linear-gradient(

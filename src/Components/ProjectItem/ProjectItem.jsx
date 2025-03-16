@@ -17,6 +17,7 @@ const ProjectItem = ({
   insideProjectDesc,
   insideProjectImg = [],
   contributors = [],
+  setNavbarVisible
 }) => {
   const [hoverIndex, setHoverIndex] = useState(null);
   const [modalContainer, setModalContainer] = useState(false);
@@ -29,8 +30,9 @@ const ProjectItem = ({
   useEffect(() => {
     if (modal === false ) {
       navigate("/");
+      setNavbarVisible(true);
     }
-  }, [modal]);
+  }, [modal, navigate, setNavbarVisible]);
 
   useEffect(() => {
     if (location.hash) {
@@ -76,6 +78,7 @@ const ProjectItem = ({
     setModalContainer(!modalContainer);
     setModal(!modal);
     document.body.style.overflow = "hidden";
+    setNavbarVisible(false);
   };
 
   const closeModal = () => {

@@ -5,7 +5,7 @@ import TypingComponent from "../TypingComponent/TypingComponent";
 import githubIcon from "../../assets/svg/github.svg";
 import mailtoIcon from "../../assets/svg/mailto.svg";
 
-const Navbar = () => {
+const Navbar = ({ visible }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -41,7 +41,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={isScrolled ? "scrolled" : ""}>
+      <nav className={`${isScrolled ? "scrolled" : ""} ${visible ? "navbar-visible" : "navbar-hidden"}`}>
         <div className="logo">
           <ul>
             <li onClick={toggleMenu}>

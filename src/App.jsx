@@ -6,16 +6,19 @@ import Skills from "./Components/Skills/Skills";
 import Experience from "./Components/Experience/Experience";
 import Projects from "./Components/Projects/Projects";
 import { Analytics } from "@vercel/analytics/react";
+import { useState } from "react";
 
 function App() {
+  const [navbarVisible, setNavbarVisible] = useState(true);
+
   return (
     <> 
-      <Navbar />
+      <Navbar visible={navbarVisible} />
       <main>
         <Intro />
         <Skills />
         <Experience />
-        <Projects />
+        <Projects setNavbarVisible={setNavbarVisible}  />
       </main>
       <Footer />
       <Analytics />

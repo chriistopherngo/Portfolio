@@ -3,7 +3,7 @@ import "./Projects.css";
 import SectionHeading from "../SectionHeading/SectionHeading";
 import ProjectItem from "../ProjectItem/ProjectItem";
 
-const Projects = () => {
+const Projects = ({setNavbarVisible}) => {
   return (
     <div className="wrapper" id="projectS">
       <div id="cheating">
@@ -22,6 +22,7 @@ const Projects = () => {
           workFormat="/img/group.png"
           insideProjectImg = {['/img/fakereddit.png','/img/fakereddit_1.png', '/img/fakereddit_2.png', '/img/fakereddit_3.png', '/img/fakereddit_4.png', '/img/fakereddit_5.png', '/img/fakereddit_6.png']}
           contributors = {['Ola Nikolai Skjeret', 'Andreas Christiansen']}
+          setNavbarVisible={setNavbarVisible}
         />
         <ProjectItem
           title="Fully Accessible Website"
@@ -33,6 +34,7 @@ const Projects = () => {
           liveSite="https://chriistopherngo.github.io/course-project/"
           workFormat="/img/solo.png"
           insideProjectImg = {[]}
+          setNavbarVisible={setNavbarVisible}
         />
         <ProjectItem
           title="Scrollytelling Project"
@@ -45,6 +47,7 @@ const Projects = () => {
           workFormat="/img/group.png"
           insideProjectImg ={[]}
           contributors = {['Shnizana Korolova', 'Edgar Dahl']}
+          setNavbarVisible={setNavbarVisible}
         />
         <ProjectItem
           title="The SUPER Assessor"
@@ -56,6 +59,7 @@ const Projects = () => {
           workFormat="/img/group.png"
           insideProjectImg ={[]}
           contributors = {['Andreas Christiansen', 'Ola Nikolai Skjeret']}
+          setNavbarVisible={setNavbarVisible}
          
         />
         <ProjectItem
@@ -69,6 +73,7 @@ const Projects = () => {
           workFormat="/img/group.png"
           insideProjectImg ={[]}
           contributors = {['Ola Nikolai Skjeret', 'Jørgen Nonstad', 'Solveig Ranøien Engen']}
+          setNavbarVisible={setNavbarVisible}
         />
         <ProjectItem
           title="CSS Game"
@@ -81,6 +86,7 @@ const Projects = () => {
           workFormat="/img/group.png"
           insideProjectImg ={[]}
           contributors = {['Shnizana Korolova', 'Edgar Dahl']}
+          setNavbarVisible={setNavbarVisible}
         />
       </div>
     </div>

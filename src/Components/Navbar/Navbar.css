@@ -179,3 +179,13 @@ nav .contact_container a:hover{
     margin-bottom: 10px !important;
   }
 }
+
+.navbar-visible {
+  display: flex;
+  transform: translateY(0px);
+  
+}
+
+.navbar-hidden {
+  transform: translateY(-50px);
+}

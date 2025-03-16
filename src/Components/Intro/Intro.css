@@ -156,7 +156,12 @@
         }
     
     }
+   
+  }
 
-
+  @media screen and (min-width: 1820px) {
+    .intro_container{
+        height: 100%;
+    }
    
   }

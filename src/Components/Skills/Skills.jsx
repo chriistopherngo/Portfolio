@@ -6,7 +6,8 @@ import SectionHeading from "../SectionHeading/SectionHeading";
 const Skills = () => {
   return (
     <div className="wrapper" id="abouT">
-      <SectionHeading preh2="Introduction" heading="Overview." />
+      {/* <SectionHeading preh2="Introduction" heading="Overview." /> */}
+      <SectionHeading preh2="What i work with" heading="Technologies." />
         <div className="skills_container">
           <Card
             title="Languages"
@@ -92,13 +93,12 @@ const Skills = () => {
           item_links={[
             "https://www.sanity.io/",
           ]}/>
-          <Card title="Tools" item_names={["Visual Studio Code", "Terminal/CLI", "Github", "Git", "MySQLWorkbench", "Docker Compose", "Figma"]} item_images={[
+          <Card title="Tools" item_names={["Visual Studio Code", "Terminal/CLI", "Github", "Git", "MySQLWorkbench", "Figma"]} item_images={[
             "/img/vscode.png", 
             "/img/terminal.png",
             "/img/github.png",
             "/img/git.png", 
             "/img/mysqlworkbench.webp",
-            "/img/dockercompose.png",
             "/img/figma.webp",
   
           ]}
@@ -109,7 +109,6 @@ const Skills = () => {
             "https://github.com/",
             "https://git-scm.com/",
             "https://www.mysql.com/products/workbench/",
-            "https://docs.docker.com/compose/",
             "https://www.figma.com/",
           ]}/>
 

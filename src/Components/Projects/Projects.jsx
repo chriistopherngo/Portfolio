@@ -26,8 +26,8 @@ const Projects = ({setNavbarVisible}) => {
         /> */}
         <ProjectItem
           title="Fully Accessible Website"
-          description="As part of the IDG2012 - Web Accessibility, Usability and Ethics course, I developed a fully accessible (concept) website for my mom's music lesson school. This website is accessible for users with visual, hearing and mobility impairments."
-          insideProjectDesc = "As part of the IDG2012 - Web Accessibility, Usability and Ethics course, I developed a fully accessible (concept) website for my mom's music lesson school. This website is accessible for users with visual, hearing and mobility impairments."
+          description="As part of a Web Accessibility, Usability and Ethics course, I developed a fully accessible (concept) website for my mom's music lesson school. This website is accessible for users with visual, hearing and mobility impairments."
+          insideProjectDesc = "As part of a Web Accessibility, Usability and Ethics course, I developed a fully accessible (concept) website for my mom's music lesson school. This website is accessible for users with visual, hearing and mobility impairments."
           img="/img/lisas.png"
           technologies={["/img/html.png", "/img/css.webp", "/img/javascript.png"]}
           githubCode="https://github.com/chriistopherngo/course-project"
@@ -35,10 +35,14 @@ const Projects = ({setNavbarVisible}) => {
           workFormat="/img/solo.png"
           insideProjectImg = {[]}
           setNavbarVisible={setNavbarVisible}
-          processHeadings={["Wireframes", "LoFi", "HiFi", "Final"]}
-          processDescriptions={["The wireframes were created using Figma, showcasing the website's layout and structure.", "The LoFi prototype was developed using Figma, providing a low-fidelity representation of the website's design.", "The HiFi prototype was created using Figma, offering a high-fidelity representation of the website's design.", "The final version of the website was developed using HTML, CSS, and JavaScript, ensuring full accessibility for users with visual, hearing, and mobility impairments."]}
-          processImages={["/img/accessibility_process_wireframes.png"]}
+          processHeadings={["LoFi", "HiFi", "Development"]}
+          processDescriptions={["Using Figma, i made a low-fidelity representation of the website's design. Here I focused on the structure of the contents, while having various type of impaired users in mind.", "In this stage I made a high-fidelity representation of the website's design, which is a iterated version of the LoFi. While the structure of contents was the focus in last the stage, the design in terms of colors, typography and reworking placements of elements was the focus of this.", "The final version of the website was developed using HTML, CSS, and JavaScript. To help visually impaired users, I used the ARIA attributes to support screen readers. Users with mobility impairments can navigate through the site with keyboard, and hearing impairments was taken into accounts by adding subtitles in videoes. The website is also responsive and works on all devices. "]}
+          processImages={[ "/img/accessibility_process_lofi.png", "/img/accessibility_process_hifi.png", "/img/lisas.png"]}
         />
+
+
+
+
         {/* <ProjectItem
           title="Scrollytelling Project"
           description="The website is based on the United Nations' Sustainable Development Goal 7, which is to ensure access to affordable, reliable, sustainable, and modern energy for all. Through an engaging and interactive storytelling format, the project aims to raise awareness about the importance of clean and affordable energy and inspire people to take action towards achieving this goal."

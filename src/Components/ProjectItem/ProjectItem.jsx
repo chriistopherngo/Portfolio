@@ -201,27 +201,28 @@ const ProjectItem = ({
               <h4>{title}</h4>
               <div className="content">
                 <h5>Project description</h5>
-                <p>{insideProjectDesc}</p>
+                <p className="max-w-[80ch]">{insideProjectDesc}</p>
 
-                <div>
-  <h5>Process</h5>
-  {processHeadings.map((heading, index) => (
-    <div key={index}>
-      <h6>{heading}</h6>
-      <p>{processDescriptions[index]}</p>
-      {processImages[index] && (
-        <div className="process_images">
-          <img src={processImages[index]} alt={`Process step ${index + 1}`} />
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-               
-
-
-                <p>..</p>
+                <h5>Screenshots (swipe)</h5>
+              <div className="screenshots_container">
+                <div
+                  className={`screenshots ${
+                    insideProjectImg.length === 0 ? "with_images" : ""
+                  }`}
+                >
+                  {insideProjectImg.length > 0 ? (
+                    insideProjectImg.map((img, index) => (
+                      <img
+                        key={index}
+                        src={img}
+                        alt={`Project image ${index + 1}`}
+                      />
+                    ))
+                  ) : (
+                    <p>No screenshots found.</p>
+                  )}
+                </div>
+              </div>
                 <h5>Technologies used</h5>
                 <div className="technologies_used">
                   {technologies.map((tech, index) => {
@@ -283,26 +284,32 @@ const ProjectItem = ({
                   </div>
                 </div>
               </div>
-              <h5>Screenshots (swipe)</h5>
-              <div className="screenshots_container">
-                <div
-                  className={`screenshots ${
-                    insideProjectImg.length === 0 ? "with_images" : ""
-                  }`}
-                >
-                  {insideProjectImg.length > 0 ? (
-                    insideProjectImg.map((img, index) => (
-                      <img
-                        key={index}
-                        src={img}
-                        alt={`Project image ${index + 1}`}
-                      />
-                    ))
-                  ) : (
-                    <p>No screenshots found.</p>
-                  )}
-                </div>
+
+              <div className="mt-[2rem]">
+                <h5>Process</h5>
+
+                {processHeadings.map((heading, index) => (
+                  <div 
+                    className={`process_container ${index % 2 === 0 ? 'flex-row-reverse' : ''}`} 
+                    key={index}
+                  >
+                    <div className="process_text">
+                      <h6>{heading}</h6>
+                      <p>{processDescriptions[index]}</p>
+                    </div>
+                    
+                    <div className="process_images">
+                      {processImages[index] && (
+                        <img 
+                          src={processImages[index]} 
+                          alt={`Project: ${heading}`}
+                        />
+                      )}
+                    </div>
+                  </div>
+                ))}
               </div>
+
             </div>
           </div>
         </div>

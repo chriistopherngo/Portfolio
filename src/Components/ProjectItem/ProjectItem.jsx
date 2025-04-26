@@ -17,7 +17,10 @@ const ProjectItem = ({
   insideProjectDesc,
   insideProjectImg = [],
   contributors = [],
-  setNavbarVisible
+  setNavbarVisible,
+  processHeadings = [],
+  processDescriptions = [],
+  processImages = [],
 }) => {
   const [hoverIndex, setHoverIndex] = useState(null);
   const [modalContainer, setModalContainer] = useState(false);
@@ -199,7 +202,25 @@ const ProjectItem = ({
               <div className="content">
                 <h5>Project description</h5>
                 <p>{insideProjectDesc}</p>
-                <h5>About</h5>
+
+                <div>
+  <h5>Process</h5>
+  {processHeadings.map((heading, index) => (
+    <div key={index}>
+      <h6>{heading}</h6>
+      <p>{processDescriptions[index]}</p>
+      {processImages[index] && (
+        <div className="process_images">
+          <img src={processImages[index]} alt={`Process step ${index + 1}`} />
+        </div>
+      )}
+    </div>
+  ))}
+</div>
+
+               
+
+
                 <p>..</p>
                 <h5>Technologies used</h5>
                 <div className="technologies_used">

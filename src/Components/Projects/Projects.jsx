@@ -11,7 +11,7 @@ const Projects = ({setNavbarVisible}) => {
       </div>
 
       <div className="project_container">
-      <ProjectItem
+        {/* <ProjectItem
           title="Fake Reddit"
           description="Forum web application, inspired by Reddit. This platform allows users to create topic-specific categories, make posts, and like posts from others. Users must sign up and log in to access all features. Part of the IDG 2001 Cloud Technologies course."
           insideProjectDesc = "This platform allows users to create topic-specific categories, make posts, and like posts from others. Users must sign up and log in to access all features. The application was developed using a MySQL database, Flask for the API, and React for the frontend. All components are deployed in Docker containers via Docker Compose on a Chameleon Cloud virtual machine."
@@ -23,7 +23,7 @@ const Projects = ({setNavbarVisible}) => {
           insideProjectImg = {['/img/fakereddit.png','/img/fakereddit_1.png', '/img/fakereddit_2.png', '/img/fakereddit_3.png', '/img/fakereddit_4.png', '/img/fakereddit_5.png', '/img/fakereddit_6.png']}
           contributors = {['Ola Nikolai Skjeret', 'Andreas Christiansen']}
           setNavbarVisible={setNavbarVisible}
-        />
+        /> */}
         <ProjectItem
           title="Fully Accessible Website"
           description="As part of the IDG2012 - Web Accessibility, Usability and Ethics course, I developed a fully accessible (concept) website for my mom's music lesson school. This website is accessible for users with visual, hearing and mobility impairments."
@@ -35,8 +35,11 @@ const Projects = ({setNavbarVisible}) => {
           workFormat="/img/solo.png"
           insideProjectImg = {[]}
           setNavbarVisible={setNavbarVisible}
+          processHeadings={["Wireframes", "LoFi", "HiFi", "Final"]}
+          processDescriptions={["The wireframes were created using Figma, showcasing the website's layout and structure.", "The LoFi prototype was developed using Figma, providing a low-fidelity representation of the website's design.", "The HiFi prototype was created using Figma, offering a high-fidelity representation of the website's design.", "The final version of the website was developed using HTML, CSS, and JavaScript, ensuring full accessibility for users with visual, hearing, and mobility impairments."]}
+          processImages={["/img/accessibility_process_wireframes.png"]}
         />
-        <ProjectItem
+        {/* <ProjectItem
           title="Scrollytelling Project"
           description="The website is based on the United Nations' Sustainable Development Goal 7, which is to ensure access to affordable, reliable, sustainable, and modern energy for all. Through an engaging and interactive storytelling format, the project aims to raise awareness about the importance of clean and affordable energy and inspire people to take action towards achieving this goal."
           insideProjectDesc ="The website is based on the United Nations' Sustainable Development Goal 7, which is to ensure access to affordable, reliable, sustainable, and modern energy for all. Through an engaging and interactive storytelling format, the project aims to raise awareness about the importance of clean and affordable energy and inspire people to take action towards achieving this goal."
@@ -87,7 +90,7 @@ const Projects = ({setNavbarVisible}) => {
           insideProjectImg ={[]}
           contributors = {['Shnizana Korolova', 'Edgar Dahl']}
           setNavbarVisible={setNavbarVisible}
-        />
+        /> */}
       </div>
     </div>
   );

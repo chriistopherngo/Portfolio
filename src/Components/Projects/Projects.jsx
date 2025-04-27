@@ -24,6 +24,39 @@ const Projects = ({setNavbarVisible}) => {
           contributors = {['Ola Nikolai Skjeret', 'Andreas Christiansen']}
           setNavbarVisible={setNavbarVisible}
         /> */}
+
+        <ProjectItem
+          title="smArt"
+          description="smArt is an interactive art exhibition. The system allows the user to choose an art style and take a picture of themselves, and based on that, have a personal work of art generated using artificial intelligence."
+          insideProjectDesc = "smArt Gallery is an interactive art exhibition developed as part of the course IDG3006 - Web of Things. The project was carried out in collaboration between three web developers and three interaction designers. The system allows the user to choose an art style and take a picture of themselves, and based on that, have a personal work of art generated using artificial intelligence."
+          img="/img/smArt.png"
+          technologies={["img/mongodb.webp", "img/express.png" , "img/react.svg", "/img/nodejs.webp", "img/tailwind.png", "img/typescript.png", "img/openai.svg"]}
+          githubCode=""
+          liveSite=""
+          workFormat="/img/group.png"
+          contributors = {['Andreas Christiansen', 'Ola Nikolai Skjeret', 'Jakob Wergeland Putkowski', 'Hedda Saasen Undseth', 'Charlotte Skramestø']}
+          insideProjectImg = {[]}
+          setNavbarVisible={setNavbarVisible}
+          processHeadings={[""]}
+          processDescriptions={[""]}
+          processImages={[ ""]}
+        />
+
+        <ProjectItem
+          title="Meeting Room Booking System"
+          description="During my internship at Kodeo AS, I was responsible for developing a web-based system for reserving meeting rooms for a client."
+          insideProjectDesc = "During my internship at Kodeo AS, I was responsible for developing a web-based system for reserving meeting rooms. The system allows administrators to view available times, book rooms, and manage guests and existing reservations. On another user interface, guests can register their visit, as well as view information about the room and time of the meeting. They will then receive a link by email that allows them to unregister their visit after it has been completed. The system is developed with Laravel and MySQL."
+          img="/img/booking.png"
+          technologies={["/img/laravel.png", "img/mysql.png"]}
+          githubCode=""
+          liveSite=""
+          workFormat="/img/solo.png"
+          insideProjectImg = {[]}
+          setNavbarVisible={setNavbarVisible}
+          processHeadings={["Planning and Designing", "Development", "Finished Product"]}
+          processDescriptions={["As the core requirements of the system already were pre-defined before handing me the responsibility for developing the project, I started the process by planning and designing the system’s layout and database structure. I focused on clearly separating admin and guest user interface as well as their functionalities, and structuring the relationships between the different entities in the database.", "Utilizing Laravel and MySQL as the tech stack, I developed the system with security (authentication & authorization), usability, and scalability in mind. The Administrators can view available times, book meeting rooms, register guests, and manage existing reservations. The Guests can sign into meetings via their own interface, access meeting details, and receive an email link to cancel their registration after the meeting.", "After development, the system was handed over to the client for use. The guest interface was set up on a tablet in their reception area, allowing guests to easily register their visit. The administrative interface was made available for internal staff to manage rooms, guests, and reservations. Although I worked alone on this project, I received good guidance from the team at Kodeo AS, which helped me improve my skills in Laravel and managing project."]}
+          processImages={[ "/img/booking_process_ERD.png", "/img/booking_process_code.png", "/img/booking_process_final.png"]}
+        />
         <ProjectItem
           title="Fully Accessible Website"
           description="As part of a Web Accessibility, Usability and Ethics course, I developed a fully accessible (concept) website for my mom's music lesson school. This website is accessible for users with visual, hearing and mobility impairments."
@@ -35,10 +68,11 @@ const Projects = ({setNavbarVisible}) => {
           workFormat="/img/solo.png"
           insideProjectImg = {[]}
           setNavbarVisible={setNavbarVisible}
-          processHeadings={["LoFi", "HiFi", "Development"]}
+          processHeadings={["LoFi", "HiFi", "Development and Final Product"]}
           processDescriptions={["Using Figma, i made a low-fidelity representation of the website's design. Here I focused on the structure of the contents, while having various type of impaired users in mind.", "In this stage I made a high-fidelity representation of the website's design, which is a iterated version of the LoFi. While the structure of contents was the focus in last the stage, the design in terms of colors, typography and reworking placements of elements was the focus of this.", "The final version of the website was developed using HTML, CSS, and JavaScript. To help visually impaired users, I used the ARIA attributes to support screen readers. Users with mobility impairments can navigate through the site with keyboard, and hearing impairments was taken into accounts by adding subtitles in videoes. The website is also responsive and works on all devices. "]}
           processImages={[ "/img/accessibility_process_lofi.png", "/img/accessibility_process_hifi.png", "/img/lisas.png"]}
         />
+
 
 
 

@@ -72,6 +72,11 @@ const Navbar = ({ visible }) => {
             </>
             <li>
               <ul className="contact_container">
+              <li onClick={toggleMenu}>
+                  <a href="https://www.linkedin.com/in/christopher-ngo-763988265/" target="_blank">
+                    <img className="githubIcon" src={"/img/linkedin.png"} alt="" />
+                  </a>
+                </li>
                 <li onClick={toggleMenu}>
                   <a href="https://github.com/chriistopherngo" target="_blank">
                     <img className="githubIcon" src={githubIcon} alt="" />

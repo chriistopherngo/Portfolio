@@ -9,6 +9,9 @@ const Footer = () => {
       <div>© 2025 Christopher Ngo. All rights reserved.</div>
       {/* <div>Built with <img src="/img/react.svg" alt="" /></div> */}
       <div className="contact_container">
+      <a href="https://www.linkedin.com/in/christopher-ngo-763988265/" target="_blank">
+          <img className="githubIcon" src={"/img/linkedin.png"} alt="" />
+        </a>
         <a href="https://github.com/chriistopherngo" target="_blank">
           <img className="githubIcon" src={githubIcon} alt="" />
         </a>

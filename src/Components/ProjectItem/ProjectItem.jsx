@@ -96,8 +96,9 @@ const ProjectItem = ({
     <>
       <div className="wrapper_experience">
         <div id={`${title.toLowerCase().replace(/\s+/g, "-")}`} className="project_item">
+
           <div className="project_details_container">
-            <div className="project_image">
+            <div className="project_image hover:cursor-pointer hover:scale-[1.005] transition-all duration-300 ease-in-out" onClick={() => openProject()}>
               <img src={img} alt="" />
             </div>
             <div className="project_details">

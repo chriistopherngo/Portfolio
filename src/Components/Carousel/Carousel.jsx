@@ -20,6 +20,8 @@ const Carousel = ({ images, caption }) => {
     setCurrentIndex(newIndex);
   };
 
+  console.log(caption[currentIndex]);
+
   return (
     <div className="relative w-full md:w-[70%] mb-[75px] mt-[50px] mx-auto ">
       <div className="relative w-full overflow-hidden rounded-lg">
@@ -27,12 +29,12 @@ const Carousel = ({ images, caption }) => {
           <img 
             src={images[currentIndex].url || images[currentIndex]}
             alt={images[currentIndex].alt || `Project image ${currentIndex + 1}`}
-            className="object-contain max-w-full max-h-full"
+            className="object-contain max-w-full max-h-full carousel_img"
           />
            {caption && (
-          <figcaption className='text-red'>
+          <div className='text-red-500'>
             {caption[currentIndex]}
-          </figcaption>
+          </div>
         )}
         </div>
       </div>
@@ -41,7 +43,6 @@ const Carousel = ({ images, caption }) => {
             <button className='w-[2.5em] h-[2.5em] rounded-full' onClick={goToNext}>&gt;</button>
         </div>
 
-      {/* Image counter */}
       <div className="absolute px-2 py-1 text-xs text-white bg-black bg-opacity-50 rounded-md bottom-2 right-2">
         {currentIndex + 1} / {images.length}
       </div>

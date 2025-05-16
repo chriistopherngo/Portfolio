@@ -465,7 +465,7 @@
   display: flex;
 }
 
-.process_images img {
+.process_images img, .carousel_img {
   width: 100%;
   height: 100%;
   border-radius: 4px;

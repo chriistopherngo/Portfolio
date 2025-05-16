@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Carousel = ({ images, caption }) => {
   const [currentIndex, setCurrentIndex] = useState(0);

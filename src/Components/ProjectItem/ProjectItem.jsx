@@ -4,6 +4,7 @@ import { IoClose } from "react-icons/io5";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useLocation, useNavigate } from "react-router-dom";
+import Carousel from "../Carousel/Carousel";
 
 
 const ProjectItem = ({
@@ -16,6 +17,7 @@ const ProjectItem = ({
   workFormat,
   insideProjectDesc,
   insideProjectImg = [],
+  insideProjectImgCaption =[],
   contributors = [],
   setNavbarVisible,
   processHeadings = [],
@@ -203,8 +205,7 @@ const ProjectItem = ({
                 <h5>Project description</h5>
                 <p className="max-w-[80ch]">{insideProjectDesc}</p>
 
-                <h5>Screenshots (swipe)</h5>
-              <div className="screenshots_container">
+              {/* <div className="screenshots_container">
                 <div
                   className={`screenshots ${
                     insideProjectImg.length === 0 ? "with_images" : ""
@@ -222,7 +223,8 @@ const ProjectItem = ({
                     <p>No screenshots found.</p>
                   )}
                 </div>
-              </div>
+              </div> */}
+              <Carousel images={insideProjectImg} caption={insideProjectImgCaption} />
                 <h5>Technologies used</h5>
                 <div className="technologies_used">
                   {technologies.map((tech, index) => {

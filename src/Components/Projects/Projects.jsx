@@ -66,7 +66,8 @@ const Projects = ({setNavbarVisible}) => {
           githubCode="https://github.com/chriistopherngo/course-project"
           liveSite="https://chriistopherngo.github.io/course-project/"
           workFormat="/img/solo.png"
-          insideProjectImg = {[]}
+          insideProjectImg = {["/img/lisas.png", "/img/carousel_accessibility_2.png", "/img/carousel_accessibility_3.png"]}
+          insideProjectImgCaption = {["Homepage", "Teacher's page", "Call to action"]}
           setNavbarVisible={setNavbarVisible}
           processHeadings={["LoFi", "HiFi", "Development and Final Product"]}
           processDescriptions={["Using Figma, i made a low-fidelity representation of the website's design. Here I focused on the structure of the contents, while having various type of impaired users in mind.", "In this stage I made a high-fidelity representation of the website's design, which is a iterated version of the LoFi. While the structure of contents was the focus in last the stage, the design in terms of colors, typography and reworking placements of elements was the focus of this.", "The final version of the website was developed using HTML, CSS, and JavaScript. To help visually impaired users, I used the ARIA attributes to support screen readers. Users with mobility impairments can navigate through the site with keyboard, and hearing impairments was taken into accounts by adding subtitles in videoes. The website is also responsive and works on all devices. "]}

@@ -16,9 +16,9 @@ function App() {
       <Navbar visible={navbarVisible} />
       <main>
         <Intro />
+        <Projects setNavbarVisible={setNavbarVisible}  />
         <Skills />
         <Experience />
-        <Projects setNavbarVisible={setNavbarVisible}  />
       </main>
       <Footer />
       <Analytics />

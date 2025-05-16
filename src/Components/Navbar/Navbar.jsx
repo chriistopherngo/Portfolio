@@ -58,20 +58,25 @@ const Navbar = ({ visible }) => {
           </div>
           <ul>
             <>
+            <li onClick={toggleMenu}>
+                <a href="#projectS" onClick={(e) => handleScrollWithOffset(e, "#projectS")}>Projects</a>
+              </li>
               <li onClick={toggleMenu}>
-                <a href="#abouT" onClick={(e) => handleScrollWithOffset(e, "#abouT")}>About</a>
+                <a href="#abouT" onClick={(e) => handleScrollWithOffset(e, "#abouT")}>Technologies</a>
               </li>
               <li onClick={toggleMenu}>
                 <a href="#experienceS" onClick={(e) => handleScrollWithOffset(e, "#experienceS")}>Experience</a>
-              </li>
-              <li onClick={toggleMenu}>
-                <a href="#projectS" onClick={(e) => handleScrollWithOffset(e, "#projectS")}>Projects</a>
               </li>
               <li className="navbar_divider" onClick={toggleMenu}></li>
               {isScrolled && (<li onClick={toggleMenu}><a href="#top">Scroll to top</a></li>)}
             </>
             <li>
               <ul className="contact_container">
+              <li onClick={toggleMenu}>
+                  <a href="https://www.linkedin.com/in/christopher-ngo-763988265/" target="_blank">
+                    <img className="githubIcon" src={"/img/linkedin.png"} alt="" />
+                  </a>
+                </li>
                 <li onClick={toggleMenu}>
                   <a href="https://github.com/chriistopherngo" target="_blank">
                     <img className="githubIcon" src={githubIcon} alt="" />

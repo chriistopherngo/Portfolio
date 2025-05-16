@@ -4,6 +4,7 @@ import { IoClose } from "react-icons/io5";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useLocation, useNavigate } from "react-router-dom";
+import Carousel from "../Carousel/Carousel";
 
 
 const ProjectItem = ({
@@ -16,8 +17,12 @@ const ProjectItem = ({
   workFormat,
   insideProjectDesc,
   insideProjectImg = [],
+  insideProjectImgCaption =[],
   contributors = [],
-  setNavbarVisible
+  setNavbarVisible,
+  processHeadings = [],
+  processDescriptions = [],
+  processImages = [],
 }) => {
   const [hoverIndex, setHoverIndex] = useState(null);
   const [modalContainer, setModalContainer] = useState(false);
@@ -91,8 +96,9 @@ const ProjectItem = ({
     <>
       <div className="wrapper_experience">
         <div id={`${title.toLowerCase().replace(/\s+/g, "-")}`} className="project_item">
+
           <div className="project_details_container">
-            <div className="project_image">
+            <div className="project_image hover:cursor-pointer hover:scale-[1.005] transition-all duration-300 ease-in-out" onClick={() => openProject()}>
               <img src={img} alt="" />
             </div>
             <div className="project_details">
@@ -198,9 +204,28 @@ const ProjectItem = ({
               <h4>{title}</h4>
               <div className="content">
                 <h5>Project description</h5>
-                <p>{insideProjectDesc}</p>
-                <h5>About</h5>
-                <p>..</p>
+                <p className="max-w-[80ch]">{insideProjectDesc}</p>
+
+              {/* <div className="screenshots_container">
+                <div
+                  className={`screenshots ${
+                    insideProjectImg.length === 0 ? "with_images" : ""
+                  }`}
+                >
+                  {insideProjectImg.length > 0 ? (
+                    insideProjectImg.map((img, index) => (
+                      <img
+                        key={index}
+                        src={img}
+                        alt={`Project image ${index + 1}`}
+                      />
+                    ))
+                  ) : (
+                    <p>No screenshots found.</p>
+                  )}
+                </div>
+              </div> */}
+              <Carousel images={insideProjectImg} caption={insideProjectImgCaption} />
                 <h5>Technologies used</h5>
                 <div className="technologies_used">
                   {technologies.map((tech, index) => {
@@ -262,26 +287,32 @@ const ProjectItem = ({
                   </div>
                 </div>
               </div>
-              <h5>Screenshots (swipe)</h5>
-              <div className="screenshots_container">
-                <div
-                  className={`screenshots ${
-                    insideProjectImg.length === 0 ? "with_images" : ""
-                  }`}
-                >
-                  {insideProjectImg.length > 0 ? (
-                    insideProjectImg.map((img, index) => (
-                      <img
-                        key={index}
-                        src={img}
-                        alt={`Project image ${index + 1}`}
-                      />
-                    ))
-                  ) : (
-                    <p>No screenshots found.</p>
-                  )}
-                </div>
+
+              <div className="mt-[2rem]">
+                <h5>Process</h5>
+
+                {processHeadings.map((heading, index) => (
+                  <div 
+                    className={`process_container ${index % 2 === 0 ? 'flex-row-reverse' : ''}`} 
+                    key={index}
+                  >
+                    <div className="process_text">
+                      <h6>{heading}</h6>
+                      <p>{processDescriptions[index]}</p>
+                    </div>
+                    
+                    <div className="process_images">
+                      {processImages[index] && (
+                        <img 
+                          src={processImages[index]} 
+                          alt={`Project: ${heading}`}
+                        />
+                      )}
+                    </div>
+                  </div>
+                ))}
               </div>
+
             </div>
           </div>
         </div>

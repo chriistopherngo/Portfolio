@@ -19,6 +19,7 @@ const ProjectItem = ({
   insideProjectImg = [],
   insideProjectImgCaption =[],
   contributors = [],
+  contributorLink =[],
   setNavbarVisible,
   processHeadings = [],
   processDescriptions = [],
@@ -253,10 +254,15 @@ const ProjectItem = ({
                 <ul className="contributors">
                   {contributors.length > 0
                     ? contributors.map((contributor, index) => (
-                        <li key={index}>{contributor}</li>
+                        <li key={index}>
+                          <a className="contributorLink" href={contributorLink[index]} target="_blank" rel="noopener noreferrer">
+                            {contributor}
+                          </a>
+                        </li>
                       ))
                     : null}
                 </ul>
+
               </div>
               
               <h5>Github code and live site</h5>

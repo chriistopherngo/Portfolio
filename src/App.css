@@ -15,6 +15,25 @@ body{
     height: 100vh;
 }
 
+.to-top-container{
+  width: 100%;
+  text-align: center;
+}
+.to-top{
+    /* background-color: #007bff; */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: linear-gradient(90deg, 
+    #8FB3FF 0%,  
+    #A37FCF 50%,
+    #D41D6D 100%);
+    text-decoration: none;
+}
+
 .msg{
     color: white;
 }

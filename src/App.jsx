@@ -19,6 +19,7 @@ function App() {
         <Projects setNavbarVisible={setNavbarVisible}  />
         <Skills />
         <Experience />
+        <div className="to-top-container"><a className="to-top" href="#top">Scroll to top</a></div>
       </main>
       <Footer />
       <Analytics />

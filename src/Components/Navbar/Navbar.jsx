@@ -59,13 +59,16 @@ const Navbar = ({ visible }) => {
           <ul>
             <>
             <li onClick={toggleMenu}>
-                <a href="#projectS" onClick={(e) => handleScrollWithOffset(e, "#projectS")}>Projects</a>
+                <a href="#projects" onClick={(e) => handleScrollWithOffset(e, "#projects")}>Projects</a>
               </li>
               <li onClick={toggleMenu}>
-                <a href="#abouT" onClick={(e) => handleScrollWithOffset(e, "#abouT")}>Technologies</a>
+                <a href="#about" onClick={(e) => handleScrollWithOffset(e, "#about")}>About Me</a>
               </li>
               <li onClick={toggleMenu}>
-                <a href="#experienceS" onClick={(e) => handleScrollWithOffset(e, "#experienceS")}>Experience</a>
+                <a href="#technologies" onClick={(e) => handleScrollWithOffset(e, "#technologies")}>Technologies</a>
+              </li>
+              <li onClick={toggleMenu}>
+                <a href="#experiences" onClick={(e) => handleScrollWithOffset(e, "#experiences")}>Experience</a>
               </li>
               <li className="navbar_divider" onClick={toggleMenu}></li>
               {isScrolled && (<li onClick={toggleMenu}><a href="#top">Scroll to top</a></li>)}

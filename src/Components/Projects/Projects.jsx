@@ -5,7 +5,7 @@ import ProjectItem from "../ProjectItem/ProjectItem";
 
 const Projects = ({setNavbarVisible}) => {
   return (
-    <div className="wrapper" id="projectS">
+    <div className="wrapper" id="projects">
       <div id="cheating">
         <SectionHeading preh2="My work" heading="Projects." />
       </div>

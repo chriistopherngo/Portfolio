@@ -32,7 +32,7 @@ const Intro = () => {
                 Hi, I'm <span className="gradient_name">Christopher Ngo</span>.
               </h1>
               <p>
-                I'm a <span className="gradient_name">Full-stack Web Developer</span> based in Gjøvik, Norway. I turn ideas into real applications.
+                I'm a <span className="gradient_name">Fullstack Web Developer</span> based in Sandnes, Norway. I turn ideas into real applications.
               </p>
             </div>
             <div className="intro_image_outer">
@@ -58,7 +58,7 @@ const Intro = () => {
               </div>
             </div>
             <p className="intro_text_mobile">
-              I'm a <span className="gradient_name">Full-stack Web Developer</span> based in Gjøvik, Norway. I turn ideas into real applications.
+              I'm a <span className="gradient_name">Fullstack Web Developer</span> based in Sandnes, Norway. I turn ideas into real applications.
             </p>
           </div>
         </>

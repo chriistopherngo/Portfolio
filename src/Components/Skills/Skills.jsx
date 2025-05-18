@@ -5,7 +5,7 @@ import SectionHeading from "../SectionHeading/SectionHeading";
 
 const Skills = () => {
   return (
-    <div className="wrapper" id="abouT">
+    <div className="wrapper" id="technologies">
       {/* <SectionHeading preh2="Introduction" heading="Overview." /> */}
       <SectionHeading preh2="What i work with" heading="Technologies." />
         <div className="skills_container">

@@ -4,7 +4,7 @@ import ExperienceItem from "../ExperienceItem/ExperienceItem";
 
 const Experience = () => {
   return (
-    <div className="wrapper" id="experienceS">
+    <div className="wrapper" id="experiences">
       <SectionHeading preh2="What I have done" heading="Experience." />
       <div className="experience_container">
       <ExperienceItem

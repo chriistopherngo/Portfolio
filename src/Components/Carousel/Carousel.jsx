@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './Carousel.css';
 
 const Carousel = ({ images, caption }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,25 +23,26 @@ const Carousel = ({ images, caption }) => {
   console.log(caption[currentIndex]);
 
   return (
-    <div className="relative w-full md:w-[70%] mb-[75px] mt-[50px] mx-auto ">
+    <div className="relative w-[80%] h-full mb-[75px] mt-[50px] mx-auto carousel ">
       <div className="relative w-full overflow-hidden rounded-lg">
-        <div className="flex flex-col justify-between w-full h-full">
+        <div className="relative w-full h-full">
           <img 
             src={images[currentIndex].url || images[currentIndex]}
             alt={images[currentIndex].alt || `Project image ${currentIndex + 1}`}
             className="object-contain max-w-full max-h-full carousel_img"
           />
-           {caption && (
+          <div className='absolute flex items-center justify-between w-full -translate-y-1/2 top-1/2'>
+            <button className='w-[2.5em] h-[2.5em] rounded-full' onClick={goToPrevious}>&lt; </button>
+            <button className='w-[2.5em] h-[2.5em] rounded-full' onClick={goToNext}>&gt;</button>
+        </div>
+        </div>
+         {caption && (
           <div className='text-red-500'>
             {caption[currentIndex]}
           </div>
         )}
-        </div>
       </div>
-      <div className='absolute flex items-center justify-between w-full -translate-y-1/2 top-1/2'>
-            <button className='w-[2.5em] h-[2.5em] rounded-full' onClick={goToPrevious}>&lt; </button>
-            <button className='w-[2.5em] h-[2.5em] rounded-full' onClick={goToNext}>&gt;</button>
-        </div>
+      
 
       <div className="absolute px-2 py-1 text-xs text-white bg-black bg-opacity-50 rounded-md bottom-2 right-2">
         {currentIndex + 1} / {images.length}

@@ -45,6 +45,25 @@ const Projects = ({setNavbarVisible}) => {
         />
 
         <ProjectItem
+          title="LAiLA, The AI-Driven Assessor"
+          description="As part of my bachelor's thesis, my group and I designed and developed LAiLA. By utilizing AI, the system's goal is to effectivize feedback processes in student-dense programming courses."
+          insideProjectDesc = "As part of my bachelor's thesis, my group and I designed and developed LAiLA. By utilizing AI, the system's goal is to effectivize feedback processes in student-dense programming courses."
+          img="/img/laila.png"
+          technologies={["/img/nodejs.webp", "/img/express.png", "/img/mysql.png", "/img/react.svg", "/img/tailwind.png"]}
+          githubCode=""
+          liveSite=""
+          workFormat="/img/group.png"
+          contributors = {['Andreas Christiansen', 'Ola Nikolai Skjeret']}
+          contributorLink= {["https://www.achr.no/", "https://ninejar.github.io/portfolio/"]}
+          insideProjectImg = {["/img/carousel_laila_1.png", "/img/carousel_laila_2.png", "/img/carousel_laila_3.png", "/img/carousel_laila_4.png", "/img/carousel_laila_5.png"]}
+          insideProjectImgCaption = {["Lecturer interface: Assignment creation. Set title, description, and deadline etc. Additionally, set criteria for LAiLA to assess.", "Student interface: Get instant feedback on your submission. The results are preliminary, and can resubmit the amount of times the lecturer allows for the assignment.", "Lecturer interface: Report over students' submissions. Includes meta datas such as pass rate, the common problems and strong areas. Based on these data, the lecturer gets suggestions for how to improve the course.", "Lecturer interface: The lecturer has the final say in the assessment. They can approve or reject the AI's comments and add their own. All sections must be reviewed and mark as approved before sending the final feedback back to the student.", "Student interface: The final feedback is sent back to the student. They can see the AI's/lecturer's comments and the final grade."]}
+          setNavbarVisible={setNavbarVisible}
+          processHeadings={["Insights", "Design", "Development", "Testing"]}
+          processDescriptions={["To gather insights for the project, we did desk research on the topic, and then conducted interviews with 21 lecturers across six universities in Norway, in addition to a survey with 76 students enrolled at NTNU. Key insights were perceived benefits and challenges of using AI in education, as well as how to effectively integrate it into the feedback process.", "Based on the insights gathered, we created a System Requirements Document, followed by user stories and acceptance criteria. We then designed the system's architecture and database structure, as well as interfaces for our system's roles: lecturers and students.", "The system was developed using Node.js, Express, MySQL, React, with Tailwind CSS for styling and Claude sonnet 3.7 for the AI. We ended up with a minimum viable product, which includes the core functionalites of the system (AI preliminary feedback, report generation and assisted AI final assessment) and a sufficient interface for both lecturer and student.", "We also conducted testing of the system with both students and lecturers. The tests involved a combination of usability testing of the UI/UX and comparison testing of the AI's feedback against a real world assessment. The results were positive, with the system being perceived as user-friendly and the AI's feedback being relatively accurate, as well as solving the problem of time-consuming feedback processes."]}
+          processImages={["/img/process_laila_1.png", "/img/process_laila_2.png", "/img/process_laila_3.png", "/img/process_laila_4.png"]}
+        />
+
+        <ProjectItem
           title="Meeting Room Booking System"
           description="During my internship at Kodeo AS, I was responsible for developing a web-based system for reserving meeting rooms for a client."
           insideProjectDesc = "During my internship at Kodeo AS, I was responsible for developing a web-based system for reserving meeting rooms. The system allows administrators to view available times, book rooms, and manage guests and existing reservations. On another user interface, guests can register their visit, as well as view information about the room and time of the meeting. They will then receive a link by email that allows them to unregister their visit after it has been completed. The system is developed with Laravel and MySQL."
